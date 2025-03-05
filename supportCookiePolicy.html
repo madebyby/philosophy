@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>philosophy</title>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script src="js/jquery.fitvids.js"></script>
+  <script src="js/philosophy.js"></script>
+  <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+  <div id="cartPanel">
+    <h2>
+      cart
+      <button type="button" class="xi-close closeBtn">Close Button</button>
+    </h2>
+    <form action="ordersCart.html">
+      <ul>
+        <li>
+          <img src="img/skincare_cleansers_product01_01.webp" alt="one-step facial cleanser Image">
+          <div>
+            <dl>
+              <dt>one-step facial cleanser</dt>
+              <dd>8oz</dd>
+            </dl>
+            <div class="numberComponent">
+              <input type="button" value="-" class="countDown">
+              <span>1</span>
+              <input type="button" value="+" class="countUp">
+            </div>
+            <button type="button" class="xi-trash trashBtn" data-panel="cartTrashPopup" aria-label="Remove Button"></button>
+            <strong>$34.00</strong>
+          </div>
+        </li>
+      </ul>
+      <div id="cartTrashPopup">
+        <p>Are you sure you want to delete the product?</p>
+        <input type="button" value="yes">
+        <input type="button" class="closeBtn" value="no">
+      </div>
+      <p>
+        Your cart is currently empty.
+      </p>
+      <div>
+        <input type="submit" value="CHECKOUT $34.00 USD">
+        <p>or 4 interest-free payments of $5.50 with <span>Afterpay</span></p>
+      </div>
+    </form>
+    <div>
+      <h3>recommended products</h3>
+      <ul class="cartBoxSlider">
+        <li>
+          <div>
+            <img src="img/skincare_cleansers_product05_01.webp" alt="one-step facial cleanser with tumeric extract">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_skincare_cleansers_product05.html">one-step facial cleanser with tumeric extract</a></dt>
+            <dd>Very oversized &amp; angular, large metal trim, flat lens</dd>
+            <dd>$28</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/bathBody_fragranceBath_product05_01.webp" alt="lavender hydrating shower gel">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_bathBody_fragranceBath_product05.html">lavender hydrating shower gel</a></dt>
+            <dd>amazing grace</dd>
+            <dd>$36</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/fragrance_EDT_product05_01.webp" alt="falling in love eau de toilette">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_fragrance_EDT_product05.html">falling in love eau de toilette</a></dt>
+            <dd>falling in love</dd>
+            <dd>$60</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/gift_skincareGift_product01_01.webp" alt="hydrate & glow skincare gift set">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_gift_skincareGift_product01.html">hydrate &amp; glow skincare gift set</a></dt>
+            <dd>mother's day gift</dd>
+            <dd>$72</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="searchPopup">
+    <h2>
+      <img src="img/philosophylogo.png" alt="philosophy">
+      <button type="button" class="xi-close closeBtn">Close Button</button>
+    </h2>
+    <form>
+      <input type="search" placeholder="Search our store" title="insert your search keyword">
+      <button type="submit" class="xi-search" aria-label="Search Button"></button>
+    </form>
+    <dl>
+      <dt>Popular Suggestions</dt>
+      <dd>fresh cream</dd>
+      <dd>amazing grace</dd>
+      <dd>pure grace</dd>
+      <dd>vanilla</dd>
+      <dd>purity</dd>
+      <dd>skincare</dd>
+      <dd>scent-sational shower gels</dd>
+      <dd>fragrance</dd>
+      <dd>gift sets</dd>
+    </dl>
+  </div>
+
+  <header>
+    <div>
+      <div class="rollingList">
+        <ol>
+          <li>Free ground shipping with $50 order</li>
+          <li>Free 5-piece skincare gift with any $65 purchase. <a href="listbestSellers.html">Shop now</a></li>
+        </ol>
+      </div>
+    </div>
+    <div>
+      <h1>
+        <a href="index_after.html">
+          <img src="img/philosophylogo_wh.png" alt="philosophy">
+        </a>
+      </h1>
+      <button type="button" class="xi-bars" data-panel="hamburgerPanel" aria-label="Nav Hamburger Button"></button>
+      <nav id="hamburgerPanel">
+        <h2>
+          <img src="img/philosophylogo.png" alt="philosophy">
+          <button type="button" class="xi-close closeBtn">Close Button</button>
+        </h2>
+        <ul>
+          <li>
+            <u>Trending now</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Trending now</span></li>
+                  <li><a href="listBestSellers.html">Best Sellers</a></li>
+                  <li><a href="listSummerEssentials.html">Summer Essentials</a></li>
+                  <li><a href="listNewArrivals.html">New Arrivals</a></li>
+                  <li><a href="listLoyaltyProgram.html">Philosophy Loyalty Program</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav1_1.webp" alt="Ultimate miracle worker">
+                    <figcaption>
+                      <strong>Ultimate miracle worker</strong>
+                      smooth fine lines, brighten your complexion, &amp; revitalize your skin with our new breakthrough
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav1_2.webp" alt="6-Piece gift on us">
+                    <figcaption>
+                      <strong>6-Piece gift on us</strong>
+                      enjoy free 6-piece best sellers gift set with any $60 purchase. limited time only!
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Skincare</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Skincare</span></li>
+                  <li><a href="listCleansersToners.html">Face Cleansers &amp; Toners</a></li>
+                  <li><a href="listMoisturizers.html">Face Moisturizer</a></li>
+                  <li><a href="listSerumsTreatments.html">Face Serums &amp; Treatments</a></li>
+                  <li><a href="listMasksPeels.html">Face Masks &amp; Peels</a></li>
+                  <li><a href="listEyeCreamsSerums.html">Eye Creams &amp; Serums</a></li>
+                  <li><a href="listLipCare.html">Lip Care</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav2_1.webp" alt="Miracle worker">
+                    <figcaption>
+                      <strong>Miracle worker</strong>
+                      spf 30 is irritation-free and perfect for the summer sun.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav2_2.webp" alt="More radiant appearance">
+                    <figcaption>
+                      <strong>More radiant appearance</strong>
+                      transform and renew dull skin and fine lines, resulting in a smoother, more radiant appearance.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Bath &amp; Body</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Bath &amp; Body</span></li>
+                  <li><a href="listBathShowerGelss.html">Fragrance Bath &amp; Shower Gels</a></li>
+                  <li><a href="listScentSationalShowerGels.html">Scent-Sational Shower Gels</a></li>
+                  <li><a href="listBodyLotionsCreams.html">Body Lotions &amp; Creams</a></li>
+                  <li><a href="listShampoo.html">Shampoo</a></li>
+                  <li><a href="listHandCreams.html">Hand Creams</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav3_1.webp" alt="Clinically proven to reduce">
+                    <figcaption>
+                      <strong>Clinically proven to reduce</strong>
+                      ditch the crepe, embrace the glow. enjoy glowing, hydrated, &amp; youthful skin.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav3_2.webp" alt="Upgrade your shower routine">
+                    <figcaption>
+                      <strong>Upgrade your shower routine</strong>
+                      shower gels and enjoy ultra creamy lather &amp; lasting hydration.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Fragrance</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Fragrance</span></li>
+                  <li><a href="listEauDeToilettes.html">Eau de Toilettes</a></li>
+                  <li><a href="listEauDeParfums.html">Eau de Parfums</a></li>
+                  <li><a href="listFragranceGifts.html">Fragrance Gifts</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav4_1.webp" alt="Vanilla musk">
+                    <figcaption>
+                      <strong>Vanilla musk</strong>
+                      indulge in our an inspired twist on our classic cream fragrance that adds a hints of vanilla musk.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav4_2.webp" alt="Meet radiant grace perfume">
+                    <figcaption>
+                      <strong>Meet radiant grace perfume</strong>
+                      a warm, empowering blend of jasmine, caramelized sandalwood, &amp; black cherry.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Gift Sets</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Gift Sets</span></li>
+                  <li><a href="listGiftsSkincareGifts.html">Skincare Gifts</a></li>
+                  <li><a href="listGiftsBathBodyGifts.html">Bath &amp; Body Gifts</a></li>
+                  <li><a href="listGiftsFragranceGifts.html">Fragrance Gifts</a></li>
+                  <li><a href="listGiftsUnder.html">Gifts Under $50</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav5_1.webp" alt="hope &amp; grace">
+                    <figcaption>
+                      <strong>hope &amp; grace</strong>
+                      travel like a pro with our all in one minis set will transform your skin.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav5_2.webp" alt="6-Piece gift on us">
+                    <figcaption>
+                      <strong>6-Piece gift on us</strong>
+                      enjoy our iconic amazing grace clean and beautifully feminine scent.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>  
+            </div>
+          </li>
+          <li>
+            <u>Discover</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Discover</span></li>
+                  <li><a href="listAboutUs.html">About Us</a></li>
+                  <li><a href="listHopeGrace.html">Hope &amp; Grace</a></li>
+                  <li><a href="listOurPurpose.html">Our Purpose</a></li>
+                  <li><a href="listLoyaltyProgram.html">Loyalty Program</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav6_1.webp" alt="Your purchases support women's mental health initiatives through hope grace.">
+                    <figcaption>
+                      your purchases help us to support community-based initiatives to improve the mental health of women through our hope &amp; grace initiative.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav6_2.webp" alt="Committed to eco-friendly packaging.">
+                    <figcaption>
+                      we are committed to developing responsible packaging that respects the environment and reduces impact on the planet &amp; the people who live here
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+        </ul>
+        <ol>
+          <li><button type="button" data-panel="searchPopup" aria-label="Search Button">Search</button></li>
+          <li><a href="ordersWishList.html" aria-label="Wish List">Wish List</a></li>
+        </ol>
+      </nav>
+      <ul>
+        <li><button type="button" class="xi-search" data-panel="searchPopup" aria-label="Search Button"></button></li>
+        <li><a href="ordersWishList.html" class="xi-heart" aria-label="Wish List"></a></li>
+        <li><a href="ordersMypage.html">My page</a></li>
+        <li><button type="button" class="xi-market" data-panel="cartPanel" aria-label="Orders Cart"></button></li>
+      </ul>
+    </div>    
+  </header>
+
+  <div class="cookieContainer">
+    <aside>
+      <h2>Cookie Policy</h2>
+      <ul class="accComponent">
+        <li>
+          <h3>Account</h3>
+          <ol>
+            <li><a href="accountProfile.html">Profile</a></li>
+            <li><a href="accountAddressBook.html">Address Book</a></li>
+          </ol>
+        </li>
+        <li>
+          <h3>Orders</h3>
+          <ol>
+            <li><a href="ordersMyOrders.html">My Orders</a></li>
+            <li><a href="ordersWishList.html">Wish List</a></li>
+            <li><a href="ordersCart.html">Cart</a></li>
+          </ol>
+        </li>
+        <li>
+          <h3>Support</h3>
+          <ol>
+            <li><a href="supportfaqs.html">faqs</a></li>
+            <li><a href="supportShippingPolicy.html">Shipping &amp; Returns</a></li>
+            <li><a href="supportAccessibility.html">Accessibility</a></li>
+            <li><a href="supportPrivacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="supportCookiePolicy.html">Cookie Policy</a></li>
+            <li><a href="supportTerms.html">Terms Of Service</a></li>
+          </ol>
+        </li>
+      </ul>
+    </aside>
+    <article>
+      <ol>
+        <li>Support</li>
+        <li>Cookie Policy</li>
+      </ol>
+      <div>
+        <h2>COOKIE POLICY</h2>
+        <b>Last modified April 25, 2023</b>
+        <p>Your privacy is important to Philosophy, and we are committed to protecting your personal information.</p>
+        <p>This Cookie policy provides you, as a user of our website with clear and accessible information about the cookies and similar technologies that Philosophy uses, why they are used and the choices you have via your cookie settings.</p>
+        <p>We encourage you to take the time to review this Cookie policy in full. However, we have designed this Cookie policy so that you can easily find answers to the questions that you might have.</p>
+      </div>
+      <ul>
+        <li>
+          <h3>What are cookies and similar technologies?</h3>
+          <p>Cookies, are small data files that are downloaded to your device when you visit a website or application. When you return to the Philosophy site, or another website that recognizes the cookie, the cookie is sent to that site to enhance your experience by remembering your preferences, providing tailored advertising, helping you navigate more efficiently or keeping you logged in. You can find out more about cookies at www.allaboutcookies.org or www.youronlinechoices.eu.</p>
+          <p>To learn more about what Philosophy specifically uses cookies for, please refer to the section “How does Philosophy use cookies?”. Also, Philosophy uses similar technologies to cookies, including pixel tags, mobile device identifiers and server logs to understand how you are using the site and provide adverts tailored to you and your interests. These technologies often take the form of a small, transparent graphic images placed on a web page or in an email. They work with cookies and capture data like your IP address, when you viewed the page or email and what device you were using.</p>
+        </li>
+        <li>
+          <h3>How does Philosophy use cookies?</h3>
+          <p>When you access the Philosophy website, view, or interact with Philosophy content or otherwise communicate with us digitally, Philosophy and our partners use cookies and similar technologies to:</p>
+          <details>
+            <summary>READ MORE</summary>
+            <ol class="supTextBox">
+              <li>Understand the behavior of users to the Philosophy site</li>
+              <li>Track which parts of the Philosophy site people have visited.</li>
+              <li>Understand the profile of the users of the Philosophy site,</li>
+              <li>Target and tailor our advertisements and content to users and measure the effectiveness of our advertisements, for example to recognize you when you visit the Philosophy site and provide a more personalized experience for more information on how we use tailored advertising, please refer to our Privacy Policy and Notice at Collection.</li>
+              <li>Make the Philosophy site as convenient and personal as possible, for example by keeping you signed in,</li>
+              <li>Provide certain services that require the use of cookies such as using an online shopping basket.</li>
+            </ol>
+          </details>
+          <p>We may also use cookies for analytics purposes - for example, we may analyze your information including your location, products and/or services requested, age, time zone, IP address and URL visited, against our wider customer base for internal business purposes, such as generating statistics and developing marketing plans, to improve our services and products, the Philosophy site and Philosophy content.</p>
+          <p>We may also aggregate and de-identify your information to create customer segments and share with our licensees and partners.</p>
+          <p>We may also use cookies for tailored advertising purposes. For example, we, or with third party vendors, may use your information to provide you with tailored advertising on third party sites, including Social Sites. These advertisements are either: (i) “contextual” (meaning they are presented due to the webpage that you are viewing); or (ii) “behavioral advertising” or “interest-based advertising” (i.e. where advertisements are shown to you based upon your interests which we have inferred from your information including demographic, geographic and interest-based data).
+          We may use tailored advertising to specifically include or exclude individuals who have registered for our products and services that are most relevant to you.</p>
+          <p>We may match your browsing activity on one device, such as your mobile phone, with your browsing activity on another device, such as your tablet, to ensure our advertising is tailored to you. To allow us to do this, our preferred technology partners may share information, including your browsing patterns, geo-location, and device identifiers, and we will match that information to the information in our user base by identifying the browser and devices that appear to be used by the same person. To learn more about how we share your information, please refer to our Privacy Policy.</p>
+          <p>When you: (i) Sign into the Philosophy site using a social site or other websites; (ii) Access social sites using the Philosophy site or other websites; and/or (iii) Submit content to social sites or other websites using the Philosophy site; that social site or other websites may use cookies and similar technologies to collect data about user behavior for their own purposes. This use of cookies is in line with that third party’s own cookie policy, over which we have no control.</p>
+        </li>
+        <li>
+          <h3>What types of cookies does Philosophy use?</h3>
+          <b>There are different types of cookies:</b>
+          <ol class="supTextBox">
+            <li>Session cookies – These are cookies which expire once you close your web browser.</li>
+            <li>Persistent cookies – These are cookies which stay on your device for a set period or until you delete them.</li>
+            <li>First party cookies – These are cookies set by the website that you are visiting at that time, either by us, or by a third party at our request.</li>
+            <li>Third party cookies – These are cookies that are set by a party other than that of the website you are visiting.</li>
+          </ol>
+          <details>
+            <summary>READ MORE</summary>
+            <b>The cookies used on the Philosophy Site can be categorized into the following categories:</b>
+            <ol class="supTextBox">
+              <li>Strictly Necessary Cookies– These cookies are required for the running and operation of the Philosophy site and cannot be switched off in our systems. For example, by facilitating your account login when accessing secure areas of the Philosophy site; allowing you to navigate around the Philosophy site including remembering text you have entered a form; determining if your browser has JavaScript enabled to allow you to view content; and using an online shopping basket. Without these cookies, some of the services that you have requested will not be provided.</li>
+              <li>Performance Cookies – These cookies collect information about how the Philosophy site is used to help us understand how the Philosophy site is performing to improve the quality of the Philosophy site and your experience when using them. For example, by counting the pages visitors go to most often, and whether any visitors receive error messages.</li>
+              <li>Functionality Cookies – These cookies enable the Philosophy site to provide you with a customized experience when navigating the site. For example, they remember choices you make (such as your username, language, or the region you are in) and provide enhanced, more personal features. These cookies can also be used to remember changes you have made to text size, fonts, and other parts of web pages that you can customize.</li>
+              <li>Targeting Cookies- The Philosophy site use cookies set by us and our third-party partners to understand how you use the site in order to build a profile of your interests. The information collected via these cookies will be used to show you better and more personal adverts on the site and other sites you visit and analyze traffic to the Philosophy site. We will share the personal information collected about your use of the Philosophy site with our advertisers and analysts.</li>
+              <li>Social Media Cookies - The Philosophy site use cookies set by Social Sites (such as the Facebook “like” button) which enables you to share and engage with our Content via these Social Sites. By allowing these cookies, these Social Sites may be able to track your browser activity and build up a profile of your interests.</li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <h3>How to manage your cookie preferences?</h3>
+          <b>We have set out below the ways you can manage your cookie preferences across your browser and your mobile device:</b>
+          <details>
+            <summary>READ MORE</summary>
+            <p>You can prevent Philosophy from storing your browser cookies by refusing cookies or by changing your browser settings. Most browsers will tell you how to stop accepting new cookies, how to be notified when you receive a new cookie, and how to disable existing cookies. However, please be aware that when you disable cookies, some features and services on the Philosophy site may not function properly and may cancel opt-outs that rely on cookies, such as web analytics. You can find out how to manage cookies on popular browsers by following these links:</p>
+            <ol class="supTextBox">
+              <li>Google Chrome</li>
+              <li>Microsoft Edge</li>
+              <li>Mozilla Firefox</li>
+              <li>Microsoft Internet Explorer</li>
+              <li>Opera</li>
+              <li>Apple Safari</li>
+            </ol>
+            <p>Mobile Device Cookies</p>
+            <p>
+              On your mobile device, your operating system may provide you with additional options to opt out of interest-based advertising or to otherwise reset your mobile identifiers. For example, you may use the “Limit Ad Tracking” setting (on iOS devices) or a setting to “Opt out of Interest-Based Ads” (on Android) which allows you to limit the use of information about your use of apps for purposes of serving ads targeted to your interests.
+            </p>
+          </details>
+        </li>
+        <li>
+          <h3>Cookie List</h3>
+          <p>A cookie is a small piece of data (text file) that a website – when visited by a user – asks your browser to store on your device in order to remember information about you, such as your language preference or login information. Those cookies are set by us and called first-party cookies. We also use third-party cookies – which are cookies from a domain different than the domain of the website you are visiting – for our advertising and marketing efforts. More specifically, we use cookies and other tracking technologies for the following purposes:</p>
+          <details>
+            <summary>READ MORE</summary>
+            <b>Strictly Necessary Cookies</b>
+            <table>
+              <caption>Website Cookie Details</caption>
+              <thead>
+                <tr>
+                  <th>Cookie Subgroup</th>
+                  <th>Cookies</th>
+                  <th>Cookies Used</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>www.philosophy.com</td>
+                  <td>__cq_dnt , a1ashgd , amplitude_cookie_test , bv_segment , BVImplmain_site , dwanonymous_xxxxxxxx , EmailPopUp , orderid , sid</td>
+                  <td>First Party</td>
+                </tr>
+                <tr>
+                  <td>philosophy.com</td>
+                  <td>__cfduid , _ALGOLIA , _ce.cch , _ce.gtld , _cmp_a , _orig_referrer , _secure_session_id , _shopify_d , _tldtest_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx , _tt_enable_cookie , _zm_id , _zm_lev , _zm_p , adobeujs-optin , amp_cookie_test , amplitude_id_d91b19af7dd20e53a184e4722866bb73philosophy.com , amplitude_testphilosophy.com , cart , cart_currency , cart_sig , cart_ts , cart_ver , ce_cookie_check , ce_get_top_level_domain , ce_need_secure_cookie , cookietest , crl8.fpcuid , forterToken , ftr_blst_1h , keep_alive , nostojs , OptanonAlertBoxClosed , OptanonConsent , s_plt , s_pltp , s_ptc , secure_customer_sig , shopify_pay_redirect , storefront_digest , wpm-domain-test</td>
+                  <td>First Party</td>
+                </tr>
+                <tr>
+                  <td>afterpay.com</td>
+                  <td>__cf_bm, __cfduid</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>cdn.cookielaw.org</td>
+                  <td>adobeujs-optin</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>youtube.com</td>
+                  <td>CONSENT, YSC</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>zotop.com</td>
+                  <td>__cfduid</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>assets.adobetm.com</td>
+                  <td>__cf_bm, __cfduid</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>tag4dione.com</td>
+                  <td>alshagd</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>displayugc.bazaarvoice.com</td>
+                  <td>BVImplmain_site</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>curalate.com</td>
+                  <td>__cfduid</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>cdn.shopify.com</td>
+                  <td>cookietest</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>philosophy.cotyinc.com</td>
+                  <td>JSESSIONID</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>think.philosophy.com</td>
+                  <td>coty_anon_uid</td>
+                  <td>Third Party</td>
+                </tr>
+              </tbody>
+            </table>
+            <b>Performance Cookies</b>
+            <p>These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site.All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.</p>         
+            <table>
+              <caption>Website Cookie Details</caption>
+              <thead>
+                <tr>
+                  <th>Cookie Subgroup</th>
+                  <th>Cookies</th>
+                  <th>Cookies Used</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>www.philosophy.com</td>
+                  <td>_sdsat_landing_page, _sdsat_lt_page_viewed, _sdsat_page_viewed, _sdsat_session_count, _sdsat_traffic_source, bv-metrics, cqcid, dwac_xxxxx</td>
+                  <td>First Party</td>
+                </tr>
+                <tr>
+                  <td>philosophy.com</td>
+                  <td>__cq_bc , __cq_uuid , _clsk , _ga , _ga_TEST , _ga_xxxxxxx , _ga_xxxxxxxxxx , _gclxxxx , _landing_page , _pk_id* , _s , _schn , _shopify_s , _shopify_sa_p , _shopify_sa_t , _shopify_y , _uetvid , _y , 2c.cId , AMCV_0B952C1653DB1F1E0A490D4B%40AdobeOrg , AMCVS_0B952C1653DB1F1E0A490D4B%40AdobeOrg , BVBRANDID , BVBRANDSID , FPAU , FPID , FPLC , gpv_e7 , optimizelyDomainTestCookie , optimizelyEndUserId , qm-rc , QuantumMetricSessionID , QuantumMetricUserID , rmStore , s_cc , s_dur , s_invisit , s_nr , s_ppv , s_ppvl , s_sq , s_v25 , s_v6 , s_visit , s_visnum , s_visnum_s , s_vnum , s_xxxx , test , TEST_AMCV_COOKIE_WRITE , tp</td>
+                  <td>First Party</td>
+                </tr>
+                <tr>
+                  <td>e-data.net</td>
+                  <td>JSESSIONID</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>rum.optimizely.com</td>
+                  <td>AWSELBORS, optimizelyRumLB</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>www.automizely-analytics.com</td>
+                  <td>_am</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>tag.as1agileone.com</td>
+                  <td>QAID</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>adk.automizely-analytics.com</td>
+                  <td>_ama</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>www.clarity.ms</td>
+                  <td>CLID</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>assets.adobetm.com</td>
+                  <td>_sdsat_lt_page_viewed, _sdsat_pages_viewed, _sdsat_traffic_source</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>www.googletagmanager.com</td>
+                  <td>_ga_xxxxxx</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>curalate.com</td>
+                  <td>cuid</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>talkable.com</td>
+                  <td>_ga, _glt_, _gcl_, tag_xxxxxxxxxxxxxxxx, _gid</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>app.bazaarvoice.com</td>
+                  <td>bv-metrics</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>d2jwhbuqcloudfront.net</td>
+                  <td>_gid</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>network.bazaarvoice.com</td>
+                  <td>BVID, BVSID</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>js.afterpay.com</td>
+                  <td>amp_cookie_test</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>everesttech.net</td>
+                  <td>everest_g_v2, everest_session_v2</td>
+                  <td>Third Party</td>
+                </tr>
+              </tbody>
+            </table>  
+            <b>Functional Cookies</b>          
+            <p>These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages.    If you do not allow these cookies then some or all of these services may not function properly.</p>
+            <table>
+              <caption>Website Cookie Details</caption>
+              <thead>
+                <tr>
+                  <th>Cookie Subgroup</th>
+                  <th>Cookies</th>
+                  <th>Cookies Used</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>www.philosophy.com</td>
+                  <td>_sdsat_email newsletter modal confirmation, layer0_bucket, layer0_destination, layer0_environment_id_info</td>
+                  <td>First Party</td>
+                </tr>
+                <tr>
+                  <td>philosophy.com</td>
+                  <td>__tld_test__ , _gd , _gd############# , _sp_id.xxxx , _sp_ses.xxxx , dw , localization , nostodev , nostopreview , nostorecotrace , nostoskipcache , s_ecid , weird_get_top_level_domain</td>
+                  <td>First Party</td>
+                </tr>
+                <tr>
+                  <td>yotpo.com</td>
+                  <td>pixel</td>
+                  <td>First Party</td>
+                </tr>
+                <tr>
+                  <td>www.talkable.com</td>
+                  <td>G_ENABLED_IDPS</td>
+                  <td>First Party</td>
+                </tr>
+                <tr>
+                  <td>targeting.unrulymedia.com</td>
+                  <td>_rxuuid</td>
+                  <td>First Party</td>
+                </tr>
+              </tbody>
+            </table> 
+            <b>Targeting Cookies</b>           
+            <p>These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.    They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.</p>
+            <table>
+              <caption>Website Cookie Details</caption>
+              <thead>
+                <tr>
+                  <th>Cookie Subgroup</th>
+                  <th>Cookies</th>
+                  <th>Cookies Used</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>www.philosophy.com</td>
+                  <td>tpc_a , xdn_bucket , xdn_destination</td>
+                  <td>First Party</td>
+                </tr>
+                <tr>
+                  <td>philosophy.com</td>
+                  <td>__attentive_cco , __attentive_dv , __attentive_id , __attentive_pv , __attentive_ss_referrer , __cq_seg , __kla_id , _ama , _attn_ , _clck , _fbp , _mibhv , _pin_unauth , _schn1 , _scid , _scid_r , _screload , _ttp , _uetsid , AMCV_ , AMCVS_ , amp_ , amp_xxxxx , NoCookie , optimizelyOptOut , pt_ , tkbl_cvuuid , usi_id , usi_return_visitor</td>
+                  <td>First Party</td>
+                </tr>
+                <tr>
+                  <td>6hqhziez.micpn.com</td>
+                  <td>_mibhv, _midat</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>ads.stickyadstv.com</td>
+                  <td>sessionId, UID, uid-bp-xxxxx</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>pubmatic.com</td>
+                  <td>KADUSERCOOKIE, KTPCACOOKIE</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>serving-sys.com</td>
+                  <td>eyeblaster, u2</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>semasio.net</td>
+                  <td>SEUNCY</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>w55c.net</td>
+                  <td>wfivefivec</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>mookie1.com</td>
+                  <td>id, mdata, ov</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>adnxs.com</td>
+                  <td>uuid2</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>taboola.com</td>
+                  <td>t_gid</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>casalemedia.com</td>
+                  <td>CMID, CMPRO, CMPS, CMST</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>t.crowdtwist.com</td>
+                  <td>cttg</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>youtube.com</td>
+                  <td>VISITOR_INFO1_LIVE</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>google.com</td>
+                  <td>NID</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>connect.nosto.com</td>
+                  <td>NOSTO_ERRORS, NOSTO_FLASH, NOSTO_SESSION, nostodev, nostopreview, nostorecotrace, nostoskipcache</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>ninthdecimal.com</td>
+                  <td>ndat</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>zeotap.com</td>
+                  <td>zc, zsc</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>bidswitch.net</td>
+                  <td>c, tuuid, tuuid_lu</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>widgets.automizely.com</td>
+                  <td>_ama</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>1rx.io</td>
+                  <td>_rxuuid</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>krxd.net</td>
+                  <td>_kuid_</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>assets.adobedtm.com</td>
+                  <td>_sdsat_email newsletter modal confirmation</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>static.klaviyo.com</td>
+                  <td>__kla_id</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>cquotient.com</td>
+                  <td>__cq_seg, uuid</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>ct.pinterest.com</td>
+                  <td>_pinterest_ct_ua</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>www.pinterest.ie</td>
+                  <td>_auth, _pinterest_referrer, _pinterest_sess, _routing_id, csrftoken</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>www.facebook.com</td>
+                  <td></td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>cdn-widgetsrepository.yotpo.com</td>
+                  <td>_sp_id.xxxx, _sp_ses.xxxx</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>scorecardresearch.com</td>
+                  <td>UID, UIDR</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>dpm.demdex.net</td>
+                  <td>dpm</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>adform.net</td>
+                  <td>C, uid</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>placed.com</td>
+                  <td>Subject-Id</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>www.talkable.com</td>
+                  <td>tkbl_cvuuid, uuid</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>advertising.com</td>
+                  <td>APID</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>demdex.net</td>
+                  <td>demdex, dextp</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>cdn.attn.tv</td>
+                  <td>__attentive_cco, __attentive_dv, __attentive_id, __attentive_pv, __attentive_ss_referrer, _attn_, tpc_a</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>ads.samba.tv</td>
+                  <td>sambapxid</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>agkn.com</td>
+                  <td>ab, u</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>doubleclick.net</td>
+                  <td>IDE, test_cookie</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>tiktok.com</td>
+                  <td>_ttp</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>bs.serving-sys.com</td>
+                  <td>r1</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>ispot.tv</td>
+                  <td>pt</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>snapchat.com</td>
+                  <td>sc_at</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>c.bing.com</td>
+                  <td>SRM_B</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>adsrvr.org</td>
+                  <td>TDCPM, TDID</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>bing.com</td>
+                  <td>MUID</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>sc-static.net</td>
+                  <td>_schn, X-AB</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>cdn.shopify.com</td>
+                  <td>__kla_id</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>myvisualiq.net</td>
+                  <td>c, tuuid, tuuid_lu</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>analytics.yahoo.com</td>
+                  <td>IDSYNC</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>bluekai.com</td>
+                  <td>bkdc, bkpa, bku</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>d2jjzw81hqbuqv.cloudfront.net</td>
+                  <td>ga, _gat, tkbl_cvuuid</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>tapad.com</td>
+                  <td>TapAd_3WAY_SYNCS, TapAd_DID, TapAd_TS</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>yahoo.com</td>
+                  <td>A3, APID, APIDTS, B</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>clarity.ms</td>
+                  <td>MUID</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>facebook.com</td>
+                  <td>fr</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>amazon-adsystem.com</td>
+                  <td>ad-id, ad-privacy</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>spotxchange.com</td>
+                  <td>audience</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>static-tracking.klaviyo.com</td>
+                  <td>__kla_id</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>linksynergy.com</td>
+                  <td>rmuid</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>atdmt.com</td>
+                  <td>ATN</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>c.clarity.ms</td>
+                  <td>ANONCHK, SM</td>
+                  <td>Third Party</td>
+                </tr>
+                <tr>
+                  <td>www.pinterest.com</td>
+                  <td>_routing_id</td>
+                  <td>Third Party</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>We also use Google, a third-party analytics provider, to collect information about websites usage and the users of the websites, including demographic and interest-level information. Google uses cookies in order to collect demographic and interest-level information and usage information from users that visit the websites, including information about the pages where users enter and exit the websites and what pages users view on the websites, time spent, browser, operating system, and IP address. Cookies allow Google to recognize a user when a user visits the websites and when the user visits other websites. Google uses the information it collects from the websites and other websites to share with us and other website operators’ information about users including age range, gender, geographic regions, general interests, and details about devices used to visit websites and purchase items. We do not link information we receive from Google with any of your personally identifiable information. For more information regarding Google’s use of cookies, and collection and use of information, see the Google privacy policy. If you would like to opt out of Google Analytics tracking, please visit the Google Analytics Opt-out Browser Add-on.</p>
+          </details>
+        </li>
+        <li>
+          <h3>Impact of disabling cookies and similar technologies</h3>
+          <p>Please be aware that, when you disable cookies and similar technologies, some features and/or services the Philosophy site may not function properly, and you will not be able to take full advantage of some of the features offered by Philosophy.</p>
+        </li>
+        <li>
+          <h3>Does this policy ever change?</h3>
+          <p>We may update or modify this policy from time to time in response to changing legal, technical, or business developments. We will obtain your consent to any material policy changes if and where this is required by applicable data protection laws. The date of the most recent version of this policy will appear at the top of the page. When we update our policy, we will take appropriate measures to inform you, consistent with the significance of the changes we make. For example, we will notify you of any changes to this policy by posting a new policy and updating the “last modified” date at the top of this page or by sending the new policy to you via email, where appropriate.</p>
+        </li>
+      </ul>
+    </article>
+  </div>
+
+  <footer>
+    <ul>
+      <li>
+        <h2>
+          <img src="img/philosophylogo_wh.png" alt="philosophy">
+        </h2>
+        <strong>why shop with us</strong>
+        <p>our philosophy is that taking small steps every day leads to your best self</p>
+      </li>
+      <li>
+        <h3>Company</h3>
+        <ol>
+          <li><a href="listAboutUs.html">About Us</a></li>
+          <li><a href="listHopeGrace.html">Giving Back</a></li>
+          <li><a href="listOurPurpose.html">Our Purpose</a></li>
+        </ol>
+      </li>
+      <li>
+        <h3>Customer Care</h3>
+        <ol>
+          <li><a href="supportShippingPolicy.html">Shipping Information</a></li>
+          <li><a href="supportReturnPolicy.html">Returns &amp; Exchanges</a></li>
+          <li><a href="listOurPurpose.html">Our Purpose</a></li>
+        </ol>
+      </li>
+      <li>
+        <h3>Account</h3>
+        <ol>
+          <li><a href="ordersMyOrders.html">Order Status</a></li>
+          <li><a href="ordersMypage.html">My Account</a></li>
+          <li><a href="listLoyaltyProgram.html">Loyalty Program</a></li>
+        </ol>
+      </li>
+    </ul>
+    <div>
+      <ol>
+        <li><a href="supportPrivacyPolicy.html">Privacy Policy</a></li>
+        <li><a href="supportTerms.html">Terms</a></li>
+        <li><a href="supportCookiePolicy.html">Cookie Policy</a></li>
+        <li><a href="supportAccessibility.html">Accessibility</a></li>
+      </ol>
+      <ol>
+        <li><a href="https://in.pinterest.com/lovephilosophy" target="_blank" aria-label="Pinterest" class="xi-pinterest-p"></a></li>
+        <li><a href="https://www.instagram.com/lovephilosophy" target="_blank" aria-label="Instagram" class="xi-instagram"></a></li>
+        <li><a href="https://www.facebook.com/philosophyus" target="_blank" aria-label="Facebook" class="xi-facebook"></a></li>
+        <li><a href="https://www.tiktok.com/@philosophy" target="_blank" aria-label="TikTok"><img src="img/tiktok_wh.png" alt="TikTok"></a></li>
+      </ol>
+    </div>
+  </footer>
+</body>
+</html>

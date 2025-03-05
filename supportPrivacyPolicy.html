@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>philosophy</title>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script src="js/jquery.fitvids.js"></script>
+  <script src="js/philosophy.js"></script>
+  <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+  <div id="cartPanel">
+    <h2>
+      cart
+      <button type="button" class="xi-close closeBtn">Close Button</button>
+    </h2>
+    <form action="ordersCart.html">
+      <ul>
+        <li>
+          <img src="img/skincare_cleansers_product01_01.webp" alt="one-step facial cleanser Image">
+          <div>
+            <dl>
+              <dt>one-step facial cleanser</dt>
+              <dd>8oz</dd>
+            </dl>
+            <div class="numberComponent">
+              <input type="button" value="-" class="countDown">
+              <span>1</span>
+              <input type="button" value="+" class="countUp">
+            </div>
+            <button type="button" class="xi-trash trashBtn" data-panel="cartTrashPopup" aria-label="Remove Button"></button>
+            <strong>$34.00</strong>
+          </div>
+        </li>
+      </ul>
+      <div id="cartTrashPopup">
+        <p>Are you sure you want to delete the product?</p>
+        <input type="button" value="yes">
+        <input type="button" class="closeBtn" value="no">
+      </div>
+      <p>
+        Your cart is currently empty.
+      </p>
+      <div>
+        <input type="submit" value="CHECKOUT $34.00 USD">
+        <p>or 4 interest-free payments of $5.50 with <span>Afterpay</span></p>
+      </div>
+    </form>
+    <div>
+      <h3>recommended products</h3>
+      <ul class="cartBoxSlider">
+        <li>
+          <div>
+            <img src="img/skincare_cleansers_product05_01.webp" alt="one-step facial cleanser with tumeric extract">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_skincare_cleansers_product05.html">one-step facial cleanser with tumeric extract</a></dt>
+            <dd>Very oversized &amp; angular, large metal trim, flat lens</dd>
+            <dd>$28</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/bathBody_fragranceBath_product05_01.webp" alt="lavender hydrating shower gel">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_bathBody_fragranceBath_product05.html">lavender hydrating shower gel</a></dt>
+            <dd>amazing grace</dd>
+            <dd>$36</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/fragrance_EDT_product05_01.webp" alt="falling in love eau de toilette">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_fragrance_EDT_product05.html">falling in love eau de toilette</a></dt>
+            <dd>falling in love</dd>
+            <dd>$60</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/gift_skincareGift_product01_01.webp" alt="hydrate & glow skincare gift set">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_gift_skincareGift_product01.html">hydrate &amp; glow skincare gift set</a></dt>
+            <dd>mother's day gift</dd>
+            <dd>$72</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="searchPopup">
+    <h2>
+      <img src="img/philosophylogo.png" alt="philosophy">
+      <button type="button" class="xi-close closeBtn">Close Button</button>
+    </h2>
+    <form>
+      <input type="search" placeholder="Search our store" title="insert your search keyword">
+      <button type="submit" class="xi-search" aria-label="Search Button"></button>
+    </form>
+    <dl>
+      <dt>Popular Suggestions</dt>
+      <dd>fresh cream</dd>
+      <dd>amazing grace</dd>
+      <dd>pure grace</dd>
+      <dd>vanilla</dd>
+      <dd>purity</dd>
+      <dd>skincare</dd>
+      <dd>scent-sational shower gels</dd>
+      <dd>fragrance</dd>
+      <dd>gift sets</dd>
+    </dl>
+  </div>
+
+  <header>
+    <div>
+      <div class="rollingList">
+        <ol>
+          <li>Free ground shipping with $50 order</li>
+          <li>Free 5-piece skincare gift with any $65 purchase. <a href="listbestSellers.html">Shop now</a></li>
+        </ol>
+      </div>
+    </div>
+    <div>
+      <h1>
+        <a href="index_after.html">
+          <img src="img/philosophylogo_wh.png" alt="philosophy">
+        </a>
+      </h1>
+      <button type="button" class="xi-bars" data-panel="hamburgerPanel" aria-label="Nav Hamburger Button"></button>
+      <nav id="hamburgerPanel">
+        <h2>
+          <img src="img/philosophylogo.png" alt="philosophy">
+          <button type="button" class="xi-close closeBtn">Close Button</button>
+        </h2>
+        <ul>
+          <li>
+            <u>Trending now</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Trending now</span></li>
+                  <li><a href="listBestSellers.html">Best Sellers</a></li>
+                  <li><a href="listSummerEssentials.html">Summer Essentials</a></li>
+                  <li><a href="listNewArrivals.html">New Arrivals</a></li>
+                  <li><a href="listLoyaltyProgram.html">Philosophy Loyalty Program</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav1_1.webp" alt="Ultimate miracle worker">
+                    <figcaption>
+                      <strong>Ultimate miracle worker</strong>
+                      smooth fine lines, brighten your complexion, &amp; revitalize your skin with our new breakthrough
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav1_2.webp" alt="6-Piece gift on us">
+                    <figcaption>
+                      <strong>6-Piece gift on us</strong>
+                      enjoy free 6-piece best sellers gift set with any $60 purchase. limited time only!
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Skincare</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Skincare</span></li>
+                  <li><a href="listCleansersToners.html">Face Cleansers &amp; Toners</a></li>
+                  <li><a href="listMoisturizers.html">Face Moisturizer</a></li>
+                  <li><a href="listSerumsTreatments.html">Face Serums &amp; Treatments</a></li>
+                  <li><a href="listMasksPeels.html">Face Masks &amp; Peels</a></li>
+                  <li><a href="listEyeCreamsSerums.html">Eye Creams &amp; Serums</a></li>
+                  <li><a href="listLipCare.html">Lip Care</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav2_1.webp" alt="Miracle worker">
+                    <figcaption>
+                      <strong>Miracle worker</strong>
+                      spf 30 is irritation-free and perfect for the summer sun.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav2_2.webp" alt="More radiant appearance">
+                    <figcaption>
+                      <strong>More radiant appearance</strong>
+                      transform and renew dull skin and fine lines, resulting in a smoother, more radiant appearance.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Bath &amp; Body</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Bath &amp; Body</span></li>
+                  <li><a href="listBathShowerGelss.html">Fragrance Bath &amp; Shower Gels</a></li>
+                  <li><a href="listScentSationalShowerGels.html">Scent-Sational Shower Gels</a></li>
+                  <li><a href="listBodyLotionsCreams.html">Body Lotions &amp; Creams</a></li>
+                  <li><a href="listShampoo.html">Shampoo</a></li>
+                  <li><a href="listHandCreams.html">Hand Creams</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav3_1.webp" alt="Clinically proven to reduce">
+                    <figcaption>
+                      <strong>Clinically proven to reduce</strong>
+                      ditch the crepe, embrace the glow. enjoy glowing, hydrated, &amp; youthful skin.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav3_2.webp" alt="Upgrade your shower routine">
+                    <figcaption>
+                      <strong>Upgrade your shower routine</strong>
+                      shower gels and enjoy ultra creamy lather &amp; lasting hydration.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Fragrance</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Fragrance</span></li>
+                  <li><a href="listEauDeToilettes.html">Eau de Toilettes</a></li>
+                  <li><a href="listEauDeParfums.html">Eau de Parfums</a></li>
+                  <li><a href="listFragranceGifts.html">Fragrance Gifts</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav4_1.webp" alt="Vanilla musk">
+                    <figcaption>
+                      <strong>Vanilla musk</strong>
+                      indulge in our an inspired twist on our classic cream fragrance that adds a hints of vanilla musk.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav4_2.webp" alt="Meet radiant grace perfume">
+                    <figcaption>
+                      <strong>Meet radiant grace perfume</strong>
+                      a warm, empowering blend of jasmine, caramelized sandalwood, &amp; black cherry.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Gift Sets</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Gift Sets</span></li>
+                  <li><a href="listGiftsSkincareGifts.html">Skincare Gifts</a></li>
+                  <li><a href="listGiftsBathBodyGifts.html">Bath &amp; Body Gifts</a></li>
+                  <li><a href="listGiftsFragranceGifts.html">Fragrance Gifts</a></li>
+                  <li><a href="listGiftsUnder.html">Gifts Under $50</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav5_1.webp" alt="hope &amp; grace">
+                    <figcaption>
+                      <strong>hope &amp; grace</strong>
+                      travel like a pro with our all in one minis set will transform your skin.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav5_2.webp" alt="6-Piece gift on us">
+                    <figcaption>
+                      <strong>6-Piece gift on us</strong>
+                      enjoy our iconic amazing grace clean and beautifully feminine scent.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>  
+            </div>
+          </li>
+          <li>
+            <u>Discover</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Discover</span></li>
+                  <li><a href="listAboutUs.html">About Us</a></li>
+                  <li><a href="listHopeGrace.html">Hope &amp; Grace</a></li>
+                  <li><a href="listOurPurpose.html">Our Purpose</a></li>
+                  <li><a href="listLoyaltyProgram.html">Loyalty Program</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav6_1.webp" alt="Your purchases support women's mental health initiatives through hope grace.">
+                    <figcaption>
+                      your purchases help us to support community-based initiatives to improve the mental health of women through our hope &amp; grace initiative.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav6_2.webp" alt="Committed to eco-friendly packaging.">
+                    <figcaption>
+                      we are committed to developing responsible packaging that respects the environment and reduces impact on the planet &amp; the people who live here
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+        </ul>
+        <ol>
+          <li><button type="button" data-panel="searchPopup" aria-label="Search Button">Search</button></li>
+          <li><a href="ordersWishList.html" aria-label="Wish List">Wish List</a></li>
+        </ol>
+      </nav>
+      <ul>
+        <li><button type="button" class="xi-search" data-panel="searchPopup" aria-label="Search Button"></button></li>
+        <li><a href="ordersWishList.html" class="xi-heart" aria-label="Wish List"></a></li>
+        <li><a href="ordersMypage.html">My page</a></li>
+        <li><button type="button" class="xi-market" data-panel="cartPanel" aria-label="Orders Cart"></button></li>
+      </ul>
+    </div>    
+  </header>
+
+  <div class="privacyContainer">
+    <aside>
+      <h2>Privacy Policy</h2>
+      <ul class="accComponent">
+        <li>
+          <h3>Account</h3>
+          <ol>
+            <li><a href="accountProfile.html">Profile</a></li>
+            <li><a href="accountAddressBook.html">Address Book</a></li>
+          </ol>
+        </li>
+        <li>
+          <h3>Orders</h3>
+          <ol>
+            <li><a href="ordersMyOrders.html">My Orders</a></li>
+            <li><a href="ordersWishList.html">Wish List</a></li>
+            <li><a href="ordersCart.html">Cart</a></li>
+          </ol>
+        </li>
+        <li>
+          <h3>Support</h3>
+          <ol>
+            <li><a href="supportfaqs.html">faqs</a></li>
+            <li><a href="supportShippingPolicy.html">Shipping &amp; Returns</a></li>
+            <li><a href="supportAccessibility.html">Accessibility</a></li>
+            <li><a href="supportPrivacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="supportCookiePolicy.html">Cookie Policy</a></li>
+            <li><a href="supportTerms.html">Terms Of Service</a></li>
+          </ol>
+        </li>
+      </ul>
+    </aside>
+    <article>
+      <ol>
+        <li>Support</li>
+        <li>Privacy Policy</li>
+      </ol>
+      <div>
+        <h2>Privacy Policy</h2>
+        <p><b>Last updated:</b>September 2024</p>
+        <p>
+          Your privacy is important to philosophy inc. and its affiliates (“philosophy”, “we” or “us”) and we are committed to protecting your personal information. this Privacy Notice (“Notice”) relates to our use of your personal information when you:
+        </p>
+        <ul class="supTextBox">
+          <li>use our website and provide us with your personal information through philosophy.com</li>
+          <li>register for our rewards program;</li>
+          <li>interact with us through social media, adverts or content on third party websites;</li>
+          <li>interact with us in person by attending a philosophy event; and/or</li>
+          <li>otherwise engage with us, for example by contacting our customer services department.</li>
+        </ul>
+        <p>
+          This Notice explains who we are; what personal information we collect about you; how we use it (including who we share that personal information with) and your rights and choices regarding your personal information.
+        </p>
+        <p>
+          If you have any questions or concerns about our use of your personal information, then please contact us using the contact details provided in the section below marked “how do I contact philosophy?”.
+        </p>
+      </div>
+      <ul>
+        <li>
+          <h3>Who is philosophy?</h3>
+          <p>we are a wellbeing beauty brand specializing in skin care, fragrance and body care products. philosophy is part of the Coty Inc group which is a world leading beauty company, making cosmetic, skincare and fragrances. for more information about Coty, visit their website <a href="https://www.coty.com/our-story/the-purpose-of-coty" target="_blank">https://www.coty.com/our-story/the-purpose-of-coty.</a></p>
+        </li>
+        <li>
+          <h3>What Information Philosophy Collect About Me And Why?</h3>
+          <p>We collect information that identifies, describes, or is reasonably capable of being associated with you (“personal information”). The following discusses the categories of personal information we collect and have collected in the preceding 12 months, the sources we collect information from, and the business or commercial purposes use of your personal information.</p>
+        </li>
+        <li>
+          <details>
+            <summary>READ MORE</summary>
+            <ol>
+              <li>To provide you with the products and services that you have requested - To administer our relationship with you and to carry out our obligations arising from the relationship between you and us, including internal accounting and administration purposes, to process payment for purchases or other services and to create and manage your account.</li>
+              <li>
+                <b>To provide you with products and services we may collect:</b>
+                <ul class="supTextBox">
+                  <li>Such as a real name, alias, postal address, unique personal identifier, online identifier, Internet Protocol address, email address, account name, or other similar identifiers.</li>
+                  <li>Biometric information. For example, if you leave a review, enter a competition on the philosophy.com site or via social media when you tag philosophy, you may provide a photograph of yourself.</li>
+                  <li>Geoloaction data. For example, when you visit the philosophy.com site, engage with philosophy content or with us digitally, we may collect your broad geographic location (e.g. country or city-level location) from your Device.</li>
+                  <li>Commercial information. Records of products or services purchased, obtained, or considered, or other purchasing or consuming histories or tendencies.</li>
+                </ul>
+                <p>For analytics purposes - For example, we may analyze your personal information including your location, products and/or services requested, age, time zone, IP address and URL visited, against our wider customer base for internal business purposes, such as generating statistics and developing marketing plans, to improve our services and products and the website. We may also aggregate and de-identify your information to create customer segments and share with our affiliates and partners.</p>
+              </li>
+              <li>
+                <b>To perform analytics we may collect and process:</b>
+                <ul class="supTextBox">
+                  <li>Internet and network information, as described in more detail in our Cookie Policy <a href="supportCookiePolicy.html" target="_blank">cookie-policy</a>if you use our Services, we automatically collect information about your browsing and search history, interaction with the features of our Services, and responses to advertisements.</li>
+                  <li>To provide you with the products and services that you have requested- to administer our relationship with you and to carry out our obligations arising from the relationship between you and us, including internal accounting and administration purposes, to process payment for purchases or other services and to create and manage your rewards account.</li>
+                  <li>For tailored advertising - We, or with third party vendors, may use your personal information to provide you with tailored advertising on third party sites, including Social Sites. these advertisements are either: (i) “contextual" (meaning they are presented due to the webpage that you are viewing); or (ii) “behavioral advertising" or “interest based advertising" (i.e. where advertisements are shown to you based upon your interests which we have inferred from your information including demographic, geographic and interest-based data). we may use tailored advertising to specifically include or exclude individuals who have registered for our products to ensure that you are provided with information about those products that are most relevant to you. to do this, we may track your browsing activity across different websites, different Devices and/or different applications. we may match your browsing activity on one Device, such as your mobile phone, with your browsing activity on another device, such as your tablet, to ensure our advertising is tailored to you. if you no longer wish to see tailored advertising, you may be able to amend your cookie preferences through your browser settings. in addition, some third party sites allow you to stop seeing advertisements from specific advertisers on that site, so you should also check your preferences on those websites.</li>
+                  <li>For non-marketing communications - We may use your personal information to communicate with you about important information in relation to your account, the service you have requested or other non-marketing communications. This includes: (i) emailing you to verify your identity when you sign-up; (ii) emailing you where you have requested a password and/or username reset; (iii) notifying you that a particular service has been suspended for maintenance or terminated; (iv) letting you know that we have updated this Notice or our Terms of Use; or (v) letting you know about any products that you have requested or purchased. We will never contact you to ask for your password, please be careful if you receive any communications from people requesting this information.</li>
+                  <li>To provide the best service to our customers - For example, we may use your personal information to process and respond to your questions and/or inquiries.</li>
+                  <li>For site optimization and management - For example we may use your personal information provided to us to:</li>
+                  <li>administer the philosophy.com website;</li>
+                  <li>ensure the security of our networks and of your information;</li>
+                  <li>customize your future visits to the philosophy.com site based on your interests to ensure the most user-friendly online navigation experience;</li>
+                  <li>improve the philosophy.com site and our other digital offerings (including to fix operational problems such as pages crashing and software bugs); and provide services to our partners such as tools, analyses, data and insights to see how their website or mobile applications are used.</li>
+                  <li>For product development and business development purposes - For example, we will use information we collect from you to improve our products and develop new products.</li>
+                  <li>For fraud prevention and detection purposes and to protect and defend the rights and property of Philosophy, our employees and business partners.</li>
+                  <li>For employment application purposes - For example, if you contact us in relation to your employment prospects, we will use your personal information to consider you for current and future employment opportunities and to contact you with respect to employment opportunities at Philosophy that you have expressed an interest in.</li>
+                </ul>
+              </li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <h3>Does philosophy share or sell personal information with anyone?</h3>
+          <p>We may disclose personal information about you to a third party for a business purpose. When we disclose personal information for a business purpose, we enter a contract that describes the purpose and requires the recipient to both keep that personal information confidential and not use it for any purpose except performing the contract. In the preceding twelve (12) months, we have disclosed we categories of third parties indicated in the chart below.</p>
+          <p>We may sell or share personal information about you to third parties, subject to your right to opt-out of those sales. Our personal information sales do not include information about individuals we know are under age 16. In the preceding twelve (12) months, Philosophy has sold the following categories of personal information to the categories of third parties indicated in the chart below. </p>
+        </li>
+        <li>
+          <details>
+            <summary>READ MORE</summary>
+            <table>
+              <caption>Personal Information Usage and Disclosure</caption>
+              <thead>
+                <tr>
+                  <th>Personal Information Category</th>
+                  <th>Business Purpose Disclosures</th>
+                  <th>Sales</th>
+                  <th>Sharing and Disclosure</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Identifiers</td>
+                  <td>Payment processing, marketing, delivery services, customer relationship management, web hosting, or data storage</td>
+                  <td>None</td>
+                  <td>Advertisers, Publishers that participate in our network, Ad services companies, Analytic companies</td>
+                </tr>
+                <tr>
+                  <td>Account information</td>
+                  <td>None</td>
+                  <td>None</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Protected Classification Characteristics and Sensitive personal information</td>
+                  <td>Marketing, customer relationship management, or data storage</td>
+                  <td>None</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Communications</td>
+                  <td>Customer relationship management, or data storage</td>
+                  <td>None</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Internet network activity</td>
+                  <td>Marketing, delivery services, customer relationship management, web hosting, or data storage</td>
+                  <td>Remarketing, retargeting, and advertising providers</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Geolocation information</td>
+                  <td>Marketing, customer relationship management, web hosting, or data storage</td>
+                  <td>Remarketing, retargeting, and advertising providers</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>          
+          </details>
+        </li>
+        <li>
+          <h3>How Long Does Philosophy Keep My Personal Information?</h3>
+          <p>We retain personal information in identifiable form only for as long as necessary to fulfill the purposes for which the personal information was provided to us or, if longer, to comply with legal obligations, to resolve disputes, to enforce agreements and similar essential purposes. To determine the appropriate retention period for personal information, we consider the amount, nature, and sensitivity of the personal information, the potential risk of harm from unauthorized use or disclosure of your personal information, the purposes for which we process your personal information and whether we can achieve those purposes through other means, and the applicable legal requirements.</p>
+        </li>
+        <li>
+          <h3>What are my data protection rights?</h3>
+          <b>Depending on where you live and subject to applicable data protection law, you may also have the following rights:</b>
+          <ol class="supTextBox">
+            <li>The right to request access to personal information that we collect, use, disclose and sell, which enables you to receive confirmation as to whether or not we are processing your personal information and access to such personal information. please note, there are a growing number of states including California, Virginia, Colorado, Connecticut and Utah where, you have the right to request that we disclose certain information about our collection, use and sale of your personal information over the past 12 months, including specific pieces of information we collected. you have the right to make a request for free two times in any 12- month period.</li>
+            <li>The right to change and/or correct inaccurate personal information. if you are a registered user, you can also review, change or correct your personal information at any time by logging in to your account by clicking the log-in link on philosophy.com. you may request that we deactivate your account by contacting us using the contact details provided in the section below “how do I contact philosophy?”.</li>
+            <li>The right to block or suppress the processing your personal information.</li>
+            <li>The right to object to our processing of your personal information (including any processing for direct marketing purposes). more information on how to stop receiving direct marketing can be found in the section below marked, “how do I stop receiving marketing communications?".</li>
+            <li>The right to request that we delete your personal information, subject to certain exceptions.</li>
+            <li>The right to opt-out of the sale of your personal information, subject to certain exceptions.</li>
+            <li>The right to request portability of your personal information.</li>
+            <li>The right to withdraw your consent, if applicable. withdrawing your consent will not affect the lawfulness of any processing we conducted prior to your withdrawal, nor will it affect processing of your personal information conducted in reliance on lawful processing grounds other than consent.</li>
+            <li>Under the California Civil Code Section 1798.83, if you are a resident of California, you may request and obtain from us once a year, free of charge, information regarding our disclosure (if any) of your personal information to third parties for marketing purposes in the preceding calendar year.</li>
+            <li>If you exercise any of your data protection rights detailed in this section, we will not discriminate against you and we will not deny you goods or services, charge you a different price of provide you with a lesser quality of goods or services.</li>
+          </ol>
+        </li>
+        <li>
+          <h3>What if I access another website through philosophy.com?</h3>
+          <p>philosophy.com may contain links to or from other websites. please be aware that we are not responsible for the privacy practices of other websites. this Notice applies only to the personal information we collect on philosophy.com. we encourage you to read the privacy policies of other websites you link to from philosophy.com or otherwise visit.</p>
+        </li>
+        <li>
+          <h3>What if I access or use a social network or public forum through philosophy.com?</h3>
+          <p>Our website may facilitate easy access to certain social networking sites and other websites or services with user-generated content features, such as Facebook, Instagram and Twitter (“Social Sites"). you understand that we do not control such services and are not liable for the manner in which they operate. please review the Social Sites’ privacy policies if you would like more information about how they collect, use and share your personal information, your privacy rights and how to change your privacy settings.</p>
+        </li>
+        <li>
+          <details>
+            <summary>READ MORE</summary>
+            <ol>
+              <li>
+                <b>Our website may enable you to:</b>
+                <p>Access Social Sites: this may include: access to websites such as a YouTube video; or activation of third party websites when you make a ‘comment’, ‘share’ or ‘like’ something on the Site using a third party social network plug-in. in each instance, such third party’s privacy policy will apply to your interaction with that website or service;</p>
+                <p>Submit content to Social Sites: for reviews, discussion forums, message boards, photographs, and other public features (“Public Forums"). we do not restrict the distribution of personal information that you voluntarily disclose in these Public Forums, so please be aware that any information you disclose there may be collected and used by us and others. for this reason, we encourage you to refrain from providing or sharing personal information about yourself in the Public Forums. we cannot prevent third parties from using such information in a way that may violate this Notice or applicable law;</p>
+                <p>Accept certain cookies from the Site (for example “Facebook Pixels”). these types of cookies help us understand your activity including the philosophy content you see, whether or not you have a Social Site account and if you are logged into that account. this information helps us to show you philosophy content you might be interested in on the Social Sites and measure the effectiveness of the philosophy content.</p>
+                <p>Sign-in to the Site using a Social Site: for example, for a harmonized user experience. signing-in using a Social Site or other third-party account may allow us to access information that you have given the Social Site permission to share. the sign-in feature may also transfer information to the Social Site or third party, such as your username or social media handle, to authenticate you. the Social Site or third party may also automatically collect information such as your IP address, information about your browser and device, and the web page address of the Site. the sign-in feature may also place and read cookies from that third party that may contain a unique identifier the Social Site or other third-party assigns to you. the functionality of and your use of the sign-in is governed by the privacy policy and terms of the Social Site.</p>
+                <p>We may use your personal information to identify you on Social Sites and to show you ads that are more relevant for you. the Social Sites will not share your personal information with other parties and will delete the information promptly after the matching process is complete.</p>
+                <p>Our use of your personal information in relation to the Social Sites will be as set out in this Notice or as otherwise notified to you. again, please note that third party sites (including the Social Sites) may be under the control of a third-party, and we encourage you to familiarize yourself with the privacy policies and terms of use of each third-party site.</p>
+              </li>
+              <li>
+                <b>Opt-out Preference Signals</b>
+                <p>Through your browser configuration, our website honors your opt-out preference signal via Global Privacy Control.</p>
+                <p>Right to Opt-out of the sale or sharing of Personal Information for Cross-Contextual Behavioral Advertising.</p>
+                <p>Residents of California, Colorado, Connecticut, Virginia, and Utah have or will soon have the right to opt-out of certain data sharing and usage arrangements, and may do so by either:</p>
+                <ol class="supTextBox">
+                  <li>Honoring your opt-out preference signal (GPC), or</li>
+                  <li>By completing the Contact Us form select “Data Privacy” in the drop down menu and enter the details you wish to opt out of.</li>
+                </ol>
+                <p>Right to Limit Sensitive Personal Information Use. You have the right to limit the use of sensitive personal information regarding you.</p>
+                <p>Non-Discrimination. We will not discriminate against you for exercising any of your rights.</p>
+              </li>
+              <li>
+                <b>Personal Information Sales Opt-Out</b>
+                <p>If you are age 16 or older, you have the right to direct us to not sell personal information about you at any time (the "right to opt-out"). We do not sell the personal information of consumers we actually know are less than 16 years old, unless we receive affirmative authorization (the "right to opt-in") from either the consumer who is between 13 and 15 years old, or the parent or guardian of a consumer less than 13 years old. Consumers who opt-in to personal information sales may opt-out of future sales at any time.</p>
+                <p>Once you make an opt-out request, we will wait at least twelve (12) months before asking you to reauthorize personal information sales.</p>
+              </li>
+            </ol>
+          </details>
+        </li>
+        <li>
+          <h3>How do I stop receiving marketing communications?</h3>
+          <p>We will only send you marketing communications if you have agreed to this, or if we are otherwise permitted by law. you may opt-out of receiving future opt-in communications from philosophy.com when you make a purchase on philosophy.com, register or otherwise provide your contact information to our customer service department. you may change your preferences at any time by revising your profile by unchecking the boxes for opt-in communications. you may also click the “unsubscribe” link at the bottom of any email opt-in communication you receive from us and follow the instructions provided therein.</p>
+          <p>Please note, whilst we will honor your request to stop receiving marketing communications, we will continue to send you service-related communications such as emails confirming purchases through the philosophy.com site and keep your information for record keeping purposes.</p>
+        </li>
+        <li>
+          <h3>Is my personal information secure?</h3>
+          <p>We understand that you care how your personal information is used and/or shared with others, and we value your trust and seek to safeguard your personal information.
+          We implement various security measures in accordance with industry standards to protect the security of your personal information both online and offline. if you have any questions about security on philosophy.com, you can contact us at +1-800-568-3151.</p>
+        </li>
+        <li>
+          <h3>Does this Notice ever change?</h3>
+          <p>We may update or modify this Notice from time to time in response to changing legal, technical or business developments. we will obtain your consent to any material Notice changes if and where this is required by applicable data protection laws. the date of the most recent version of this Notice will appear at the top of the page.</p>
+          <p>When we update our Notice, we will take appropriate measures to inform you, consistent with the significance of the changes we make. for example, we will notify you of any changes to this Notice by posting a new Notice and updating the “last modified" date at the top of this page or by sending the new Notice to you via email, where appropriate.</p>
+        </li>
+        <li>
+          <h3>How do I contact philosophy?</h3>
+          <p>
+            We have taken great measures to ensure that your visit to philosophy.com is an excellent one and that your privacy is respected. if you have any questions, comments, or concerns about our privacy practices and/or would like to submit a privacy request, please contact us either:
+            via phone at +1-800-568-3151;
+          </p>
+          <p>
+            <a href="mailto:customercare@philosophy.com">customercare@philosophy.com</a>
+          </p>
+        </li>
+      </ul>
+    </article>
+  </div>
+
+  <footer>
+    <ul>
+      <li>
+        <h2>
+          <img src="img/philosophylogo_wh.png" alt="philosophy">
+        </h2>
+        <strong>why shop with us</strong>
+        <p>our philosophy is that taking small steps every day leads to your best self</p>
+      </li>
+      <li>
+        <h3>Company</h3>
+        <ol>
+          <li><a href="listAboutUs.html">About Us</a></li>
+          <li><a href="listHopeGrace.html">Giving Back</a></li>
+          <li><a href="listOurPurpose.html">Our Purpose</a></li>
+        </ol>
+      </li>
+      <li>
+        <h3>Customer Care</h3>
+        <ol>
+          <li><a href="supportShippingPolicy.html">Shipping Information</a></li>
+          <li><a href="supportReturnPolicy.html">Returns &amp; Exchanges</a></li>
+          <li><a href="listOurPurpose.html">Our Purpose</a></li>
+        </ol>
+      </li>
+      <li>
+        <h3>Account</h3>
+        <ol>
+          <li><a href="ordersMyOrders.html">Order Status</a></li>
+          <li><a href="ordersMypage.html">My Account</a></li>
+          <li><a href="listLoyaltyProgram.html">Loyalty Program</a></li>
+        </ol>
+      </li>
+    </ul>
+    <div>
+      <ol>
+        <li><a href="supportPrivacyPolicy.html">Privacy Policy</a></li>
+        <li><a href="supportTerms.html">Terms</a></li>
+        <li><a href="supportCookiePolicy.html">Cookie Policy</a></li>
+        <li><a href="supportAccessibility.html">Accessibility</a></li>
+      </ol>
+      <ol>
+        <li><a href="https://in.pinterest.com/lovephilosophy" target="_blank" aria-label="Pinterest" class="xi-pinterest-p"></a></li>
+        <li><a href="https://www.instagram.com/lovephilosophy" target="_blank" aria-label="Instagram" class="xi-instagram"></a></li>
+        <li><a href="https://www.facebook.com/philosophyus" target="_blank" aria-label="Facebook" class="xi-facebook"></a></li>
+        <li><a href="https://www.tiktok.com/@philosophy" target="_blank" aria-label="TikTok"><img src="img/tiktok_wh.png" alt="TikTok"></a></li>
+      </ol>
+    </div>
+  </footer>
+</body>
+</html>

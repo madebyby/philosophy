@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>philosophy</title>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script src="js/jquery.fitvids.js"></script>
+  <script src="js/philosophy.js"></script>
+  <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+  <div id="cartPanel">
+    <h2>
+      cart
+      <button type="button" class="xi-close closeBtn">Close Button</button>
+    </h2>
+    <form action="ordersCart.html">
+      <ul>
+        <li>
+          <img src="img/skincare_cleansers_product01_01.webp" alt="one-step facial cleanser Image">
+          <div>
+            <dl>
+              <dt>one-step facial cleanser</dt>
+              <dd>8oz</dd>
+            </dl>
+            <div class="numberComponent">
+              <input type="button" value="-" class="countDown">
+              <span>1</span>
+              <input type="button" value="+" class="countUp">
+            </div>
+            <button type="button" class="xi-trash trashBtn" data-panel="cartTrashPopup" aria-label="Remove Button"></button>
+            <strong>$34.00</strong>
+          </div>
+        </li>
+      </ul>
+      <div id="cartTrashPopup">
+        <p>Are you sure you want to delete the product?</p>
+        <input type="button" value="yes">
+        <input type="button" class="closeBtn" value="no">
+      </div>
+      <p>
+        Your cart is currently empty.
+      </p>
+      <div>
+        <input type="submit" value="CHECKOUT $34.00 USD">
+        <p>or 4 interest-free payments of $5.50 with <span>Afterpay</span></p>
+      </div>
+    </form>
+    <div>
+      <h3>recommended products</h3>
+      <ul class="cartBoxSlider">
+        <li>
+          <div>
+            <img src="img/skincare_cleansers_product05_01.webp" alt="one-step facial cleanser with tumeric extract">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_skincare_cleansers_product05.html">one-step facial cleanser with tumeric extract</a></dt>
+            <dd>Very oversized &amp; angular, large metal trim, flat lens</dd>
+            <dd>$28</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/bathBody_fragranceBath_product05_01.webp" alt="lavender hydrating shower gel">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_bathBody_fragranceBath_product05.html">lavender hydrating shower gel</a></dt>
+            <dd>amazing grace</dd>
+            <dd>$36</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/fragrance_EDT_product05_01.webp" alt="falling in love eau de toilette">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_fragrance_EDT_product05.html">falling in love eau de toilette</a></dt>
+            <dd>falling in love</dd>
+            <dd>$60</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/gift_skincareGift_product01_01.webp" alt="hydrate & glow skincare gift set">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_gift_skincareGift_product01.html">hydrate &amp; glow skincare gift set</a></dt>
+            <dd>mother's day gift</dd>
+            <dd>$72</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="searchPopup">
+    <h2>
+      <img src="img/philosophylogo.png" alt="philosophy">
+      <button type="button" class="xi-close closeBtn">Close Button</button>
+    </h2>
+    <form>
+      <input type="search" placeholder="Search our store" title="insert your search keyword">
+      <button type="submit" class="xi-search" aria-label="Search Button"></button>
+    </form>
+    <dl>
+      <dt>Popular Suggestions</dt>
+      <dd>fresh cream</dd>
+      <dd>amazing grace</dd>
+      <dd>pure grace</dd>
+      <dd>vanilla</dd>
+      <dd>purity</dd>
+      <dd>skincare</dd>
+      <dd>scent-sational shower gels</dd>
+      <dd>fragrance</dd>
+      <dd>gift sets</dd>
+    </dl>
+  </div>
+
+  <header>
+    <div>
+      <div class="rollingList">
+        <ol>
+          <li>Free ground shipping with $50 order</li>
+          <li>Free 5-piece skincare gift with any $65 purchase. <a href="listbestSellers.html">Shop now</a></li>
+        </ol>
+      </div>
+    </div>
+    <div>
+      <h1>
+        <a href="index_after.html">
+          <img src="img/philosophylogo_wh.png" alt="philosophy">
+        </a>
+      </h1>
+      <button type="button" class="xi-bars" data-panel="hamburgerPanel" aria-label="Nav Hamburger Button"></button>
+      <nav id="hamburgerPanel">
+        <h2>
+          <img src="img/philosophylogo.png" alt="philosophy">
+          <button type="button" class="xi-close closeBtn">Close Button</button>
+        </h2>
+        <ul>
+          <li>
+            <u>Trending now</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Trending now</span></li>
+                  <li><a href="listBestSellers.html">Best Sellers</a></li>
+                  <li><a href="listSummerEssentials.html">Summer Essentials</a></li>
+                  <li><a href="listNewArrivals.html">New Arrivals</a></li>
+                  <li><a href="listLoyaltyProgram.html">Philosophy Loyalty Program</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav1_1.webp" alt="Ultimate miracle worker">
+                    <figcaption>
+                      <strong>Ultimate miracle worker</strong>
+                      smooth fine lines, brighten your complexion, &amp; revitalize your skin with our new breakthrough
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav1_2.webp" alt="6-Piece gift on us">
+                    <figcaption>
+                      <strong>6-Piece gift on us</strong>
+                      enjoy free 6-piece best sellers gift set with any $60 purchase. limited time only!
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Skincare</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Skincare</span></li>
+                  <li><a href="listCleansersToners.html">Face Cleansers &amp; Toners</a></li>
+                  <li><a href="listMoisturizers.html">Face Moisturizer</a></li>
+                  <li><a href="listSerumsTreatments.html">Face Serums &amp; Treatments</a></li>
+                  <li><a href="listMasksPeels.html">Face Masks &amp; Peels</a></li>
+                  <li><a href="listEyeCreamsSerums.html">Eye Creams &amp; Serums</a></li>
+                  <li><a href="listLipCare.html">Lip Care</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav2_1.webp" alt="Miracle worker">
+                    <figcaption>
+                      <strong>Miracle worker</strong>
+                      spf 30 is irritation-free and perfect for the summer sun.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav2_2.webp" alt="More radiant appearance">
+                    <figcaption>
+                      <strong>More radiant appearance</strong>
+                      transform and renew dull skin and fine lines, resulting in a smoother, more radiant appearance.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Bath &amp; Body</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Bath &amp; Body</span></li>
+                  <li><a href="listBathShowerGelss.html">Fragrance Bath &amp; Shower Gels</a></li>
+                  <li><a href="listScentSationalShowerGels.html">Scent-Sational Shower Gels</a></li>
+                  <li><a href="listBodyLotionsCreams.html">Body Lotions &amp; Creams</a></li>
+                  <li><a href="listShampoo.html">Shampoo</a></li>
+                  <li><a href="listHandCreams.html">Hand Creams</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav3_1.webp" alt="Clinically proven to reduce">
+                    <figcaption>
+                      <strong>Clinically proven to reduce</strong>
+                      ditch the crepe, embrace the glow. enjoy glowing, hydrated, &amp; youthful skin.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav3_2.webp" alt="Upgrade your shower routine">
+                    <figcaption>
+                      <strong>Upgrade your shower routine</strong>
+                      shower gels and enjoy ultra creamy lather &amp; lasting hydration.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Fragrance</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Fragrance</span></li>
+                  <li><a href="listEauDeToilettes.html">Eau de Toilettes</a></li>
+                  <li><a href="listEauDeParfums.html">Eau de Parfums</a></li>
+                  <li><a href="listFragranceGifts.html">Fragrance Gifts</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav4_1.webp" alt="Vanilla musk">
+                    <figcaption>
+                      <strong>Vanilla musk</strong>
+                      indulge in our an inspired twist on our classic cream fragrance that adds a hints of vanilla musk.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav4_2.webp" alt="Meet radiant grace perfume">
+                    <figcaption>
+                      <strong>Meet radiant grace perfume</strong>
+                      a warm, empowering blend of jasmine, caramelized sandalwood, &amp; black cherry.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Gift Sets</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Gift Sets</span></li>
+                  <li><a href="listGiftsSkincareGifts.html">Skincare Gifts</a></li>
+                  <li><a href="listGiftsBathBodyGifts.html">Bath &amp; Body Gifts</a></li>
+                  <li><a href="listGiftsFragranceGifts.html">Fragrance Gifts</a></li>
+                  <li><a href="listGiftsUnder.html">Gifts Under $50</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav5_1.webp" alt="hope &amp; grace">
+                    <figcaption>
+                      <strong>hope &amp; grace</strong>
+                      travel like a pro with our all in one minis set will transform your skin.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav5_2.webp" alt="6-Piece gift on us">
+                    <figcaption>
+                      <strong>6-Piece gift on us</strong>
+                      enjoy our iconic amazing grace clean and beautifully feminine scent.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>  
+            </div>
+          </li>
+          <li>
+            <u>Discover</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Discover</span></li>
+                  <li><a href="listAboutUs.html">About Us</a></li>
+                  <li><a href="listHopeGrace.html">Hope &amp; Grace</a></li>
+                  <li><a href="listOurPurpose.html">Our Purpose</a></li>
+                  <li><a href="listLoyaltyProgram.html">Loyalty Program</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav6_1.webp" alt="Your purchases support women's mental health initiatives through hope grace.">
+                    <figcaption>
+                      your purchases help us to support community-based initiatives to improve the mental health of women through our hope &amp; grace initiative.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav6_2.webp" alt="Committed to eco-friendly packaging.">
+                    <figcaption>
+                      we are committed to developing responsible packaging that respects the environment and reduces impact on the planet &amp; the people who live here
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+        </ul>
+        <ol>
+          <li><button type="button" data-panel="searchPopup" aria-label="Search Button">Search</button></li>
+          <li><a href="ordersWishList.html" aria-label="Wish List">Wish List</a></li>
+        </ol>
+      </nav>
+      <ul>
+        <li><button type="button" class="xi-search" data-panel="searchPopup" aria-label="Search Button"></button></li>
+        <li><a href="ordersWishList.html" class="xi-heart" aria-label="Wish List"></a></li>
+        <li><a href="ordersMypage.html">My page</a></li>
+        <li><button type="button" class="xi-market" data-panel="cartPanel" aria-label="Orders Cart"></button></li>
+      </ul>
+    </div>    
+  </header>
+
+
+  <main>
+    <div class="mainItem">
+      <div>
+        <p>one-step facial cleanser</p>
+        <h3>purity</h3>
+        <a href="detail_skincare_cleansers_product01.html">Shop Trending Now</a>
+      </div>
+      <div>
+        <img src="img/skincare_cleansers_product01_cutout.png" alt="One-Step Facial Cleanser image">
+        <div>
+          <strong>Featured</strong>
+          <u>Cleanser</u>
+        </div>
+      </div>
+    </div>
+    
+    <div>
+      <div class="rollingList">
+        <ul>
+          <li>One-Step Mattifying Facial Cleanser</li>
+          <li>Nourish &amp; Rejuvenate Face &amp; Neck Cream</li>
+          <li>Facial Firming Serum</li>
+          <li>Vitamin C Resurfacing Peel Kit</li>
+          <li>Eye Power Treatment Fill &amp; Firm</li>
+          <li>Lip Balm</li>
+        </ul>
+      </div>
+    </div>
+
+    <section>
+      <h3>New Arrivals</h3>
+      <div>
+        <ul class="newNavi">
+          <li><button type="button" data-name="skinCare">Skincare</button></li>
+          <li><button type="button" data-name="bathBody">Bath &amp; Body</button></li>
+          <li><button type="button" data-name="fragrance">Fragrance</button></li>
+        </ul>
+        <span></span>
+      </div>
+      <div class="tabSlider">
+        <div class="skinCareTab active">
+          <ul class="productsBoxSlider" id="skinCareSlider">
+            <li>
+              <figure>
+                <img src="img/skincare_cleansers_product01_03.webp" alt="Highlight Skincare">
+                <figcaption>
+                  <strong>New Skincare</strong>
+                  <a href="listCleansersToners.html">SHOP ALL</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <div>
+                <img src="img/skincare_cleansers_product01_01.webp" alt="One-step facial cleanser">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_skincare_cleansers_product01.html">One-step facial cleanser</a></dt>
+                <dd>Purity made simple</dd>
+                <dd>$34</dd>
+              </dl>
+            </li>
+            <li>
+              <div>
+                <img src="img/skincare_cleansers_product02_01.webp" alt="exfoliating daily facial wash">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_skincare_cleansers_product02.html">exfoliating daily facial wash</a></dt>
+                <dd>the microdelivery</dd>
+                <dd>$46</dd>
+              </dl>
+            </li>
+            <li>
+              <div>
+                <img src="img/skincare_cleansers_product03_01.webp" alt="oil-free salicylic acid acne treatment cleanser">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_skincare_cleansers_product03.html">oil-free salicylic acid acne treatment cleanser</a></dt>
+                <dd>clear days ahead</dd>
+                <dd>$28</dd>
+              </dl>
+            </li>
+            <li>
+              <div>
+                <img src="img/skincare_moisturizers_product01_01.webp" alt="nourish & rejuvenate face & neck cream image">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_skincare_moisturizers_product01.html">nourish & rejuvenate face & neck cream</a></dt>
+                <dd>ultimate miracle worker</dd>
+                <dd>$34</dd>
+              </dl>
+            </li>
+            <li>
+              <div>
+                <img src="img/skincare_moisturizers_product02_01.webp" alt="line-correcting overnight cream image">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_skincare_moisturizers_product02.html">line-correcting overnight cream</a></dt>
+                <dd>anti-wrinkle miracle worker+</dd>
+                <dd>$79</dd>
+              </dl>
+            </li>
+            <li>
+              <div>
+                <img src="img/skincare_moisturizers_product03_01.webp" alt="smooth-glow multi-tasking moisturizer broad spectrum spf 30 image">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_skincare_moisturizers_product03.html">smooth-glow multi-tasking moisturizer broad spectrum spf 30</a></dt>
+                <dd>hope in a jar</dd>
+                <dd>$49</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+        <div class="bathBodyTab">
+          <ul class="productsBoxSlider" id="bathBodySlider">
+            <li>
+              <figure>
+                <img src="img/bathBody_fragranceBath_product01_02.webp" alt="Highlight bathBody">
+                <figcaption>
+                  <strong>Bath &amp; Body</strong>
+                  <a href="listBathShowerGelss.html">SHOP ALL</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <div>
+                <img src="img/bathBody_fragranceBath_product01_01.webp" alt="amazing grace hydrating shower gel">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_bathBody_fragranceBath_product01.html">amazing grace hydrating shower gel</a></dt>
+                <dd>amazing grace</dd>
+                <dd>$36</dd>
+              </dl>
+            </li>
+            <li>
+              <div>
+                <img src="img/bathBody_fragranceBath_product02_01.webp" alt="warm cashmere hydrating shower gel">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_bathBody_fragranceBath_product02.html">warm cashmere hydrating shower gel</a></dt>
+                <dd>fresh cream</dd>
+                <dd>$36</dd>
+              </dl>
+            </li>
+            <li>
+              <div>
+                <img src="img/bathBody_fragranceBath_product03_01.webp" alt="fresh cream hydrating shower gel">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_bathBody_fragranceBath_product03.html">fresh cream hydrating shower gel</a></dt>
+                <dd>fresh cream</dd>
+                <dd>$36</dd>
+              </dl>
+            </li>
+            <li>
+              <div>
+                <img src="img/bathBody_scent_product01_01.webp" alt="lemon custard hydrating shower gel image">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_bathBody_scent_product01.html">lemon custard hydrating shower gel</a></dt>
+                <dd>scent-sational shower gel</dd>
+                <dd>$27</dd>
+              </dl>
+            </li>
+            <li>
+              <div>
+                <img src="img/bathBody_scent_product02_01.webp" alt="vanilla birthday cake hydrating shower gel image">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_bathBody_scent_product02.html">vanilla birthday cake hydrating shower gel</a></dt>
+                <dd>scent-sational shower gel</dd>
+                <dd>$27</dd>
+              </dl>
+            </li>
+            <li>
+              <div>
+                <img src="img/bathBody_scent_product03_01.webp" alt="coconut splash hydrating shower gel image">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_bathBody_scent_product03.html">coconut splash hydrating shower gel</a></dt>
+                <dd>scent-sational shower gel</dd>
+                <dd>$27</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+        <div class="fragranceTab">
+          <ul class="productsBoxSlider" id="fragranceSlider">
+            <li>
+              <figure>
+                <img src="img/fragrance_EDT_product01_02.webp" alt="Highlight Fragrance">
+                <figcaption>
+                  <strong>Fragrance</strong>
+                  <a href="listEauDeToilettes.html">SHOP ALL</a>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <div>
+                <img src="img/fragrance_EDT_product01_01.webp" alt="warm cashmere eau de toilette">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_fragrance_EDT_product01.html">warm cashmere eau de toilette</a></dt>
+                <dd>fresh cream</dd>
+                <dd>$54</dd>
+              </dl>
+            </li>
+            <li>
+              <div>
+                <img src="img/fragrance_EDT_product02_01.webp" alt="amazing grace eau de toilette">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_fragrance_EDT_product02.html">amazing grace eau de toilette</a></dt>
+                <dd>amazing grace</dd>
+                <dd>$64</dd>
+              </dl>
+            </li>
+            <li>
+              <div>
+                <img src="img/fragrance_EDT_product03_01.webp" alt="pure grace eau de toilette">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_fragrance_EDT_product03.html">pure grace eau de toilette</a></dt>
+                <dd>pure grace</dd>
+                <dd>$64</dd>
+              </dl>
+            </li>
+            <li>
+              <div>
+                <img src="img/fragrance_EDP_product01_01.webp" alt="radiant grace eau de parfum image">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_fragrance_EDP_product01.html">radiant grace eau de parfum</a></dt>
+                <dd>radiant grace</dd>
+                <dd>$74</dd>
+              </dl>
+            </li>
+            <li>
+              <div>
+                <img src="img/fragrance_EDP_product02_01.webp" alt="amazing grace eau de parfum image">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_fragrance_EDP_product02.html">amazing grace eau de parfum</a></dt>
+                <dd>amazing grace</dd>
+                <dd>$74</dd>
+              </dl>
+            </li>
+            <li>
+              <div>
+                <img src="img/fragrance_EDP_product03_01.webp" alt="pure grace eau de parfum image">
+                <mark>New</mark>
+                <button type="button" class="xi-heart heartBtn">Wish List</button>
+                <input type="button" value="Add to Cart" data-panel="cartPanel">
+              </div>
+              <dl>
+                <dt><a href="detail_fragrance_EDP_product03.html">pure grace eau de parfum</a></dt>
+                <dd>pure grace</dd>
+                <dd>$74</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  
+    <section>
+      <h3>Hot This Week</h3>
+      <div>
+        <div class="topRow">
+          <figure>
+            <img src="img/hot_this_week1.webp" alt="Keep your skin hydrated">
+            <figcaption>
+              <strong>Keep your skin hydrated</strong>
+              <a href="detail_bathBody_scent_product05.html">SHOP NOW</a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/hot_this_week2.webp" alt="Resurfacing body serum">
+            <figcaption>
+              <strong>Resurfacing body serum</strong>
+              <a href="detail_trendingNow_newArrival_product13.html">SHOP NOW</a>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="bottomRow">
+          <figure>
+            <img src="img/hot_this_week3.webp" alt="Skincare">
+            <figcaption>
+              <strong>Skincare</strong>
+              <a href="listCleansersToners.html">SHOP NOW</a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/hot_this_week4.webp" alt="Bath & Body">
+            <figcaption>
+              <strong>Bath &amp; Body</strong>
+              <a href="listBathShowerGelss.html">SHOP NOW</a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/hot_this_week5.webp" alt="Fragrance">
+            <figcaption>
+              <strong>Fragrance</strong>
+              <a href="listEauDeToilettes.html">SHOP NOW</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Best Sellers</h3>
+      <p>elevate your daily beauty routine with tried &amp; true bestsellers that address a multitude of concerns and boost your glow.</p>
+      <ul class="bestSellersSlider">
+        <li>
+          <div>
+            <img src="img/skincare_cleansers_product05_01.webp" alt="one-step facial cleanser with tumeric extract">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_skincare_cleansers_product05.html">one-step facial cleanser with tumeric extract</a></dt>
+            <dd>Purity made simple</dd>
+            <dd>$22</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/bathBody_fragranceBath_product05_01.webp" alt="lavender hydrating shower gel">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_bathBody_fragranceBath_product05.html">lavender hydrating shower gel</a></dt>
+            <dd>amazing grace</dd>
+            <dd>$36</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/fragrance_EDT_product05_01.webp" alt="falling in love eau de toilette">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_fragrance_EDT_product05.html">falling in love eau de toilette</a></dt>
+            <dd>falling in love</dd>
+            <dd>$60</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/gift_skincareGift_product01_01.webp" alt="hydrate glow skincare gift set">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_gift_skincareGift_product01.html">hydrate &amp; glow skincare gift set</a></dt>
+            <dd>mother's day gift</dd>
+            <dd>$72</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/gift_skincareGift_product02_01.webp" alt="hydrate & glow skincare gift set">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_gift_skincareGift_product01.html">hydrate, smooth &amp; glow mini set</a></dt>
+            <dd>hope in a jar</dd>
+            <dd>$20</dd>
+          </dl>
+        </li>
+      </ul>
+    </section>
+  
+
+    <section>
+      <video src="img/introducing_video.mp4" autoplay muted loop></video>
+      <div>
+        <small>Introducing</small>
+        <h3>Nourish &amp; Rejuvenate Face &amp; Neck Cream</h3>
+        <p>Want firm skin without the irritation?</p>
+        <p>Our new face &amp; neck cream, with pure retinol, tackles wrinkles, dryness, and more.</p>
+        <a href="detail_skincare_moisturizers_product01.html">Shop now</a>
+      </div>
+    </section>
+  
+
+    <section>
+      <h3>Stay in Touch</h3>
+      <p>Sign up to stay in the loop about exclusive offers and the latest product information.</p>
+      <form>
+        <input type="email" placeholder="Your email" title="Enter your email address to receive special offers">
+        <input type="submit" value="Subscribe">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <ul>
+      <li>
+        <h2>
+          <img src="img/philosophylogo_wh.png" alt="philosophy">
+        </h2>
+        <strong>why shop with us</strong>
+        <p>our philosophy is that taking small steps every day leads to your best self</p>
+      </li>
+      <li>
+        <h3>Company</h3>
+        <ol>
+          <li><a href="listAboutUs.html">About Us</a></li>
+          <li><a href="listHopeGrace.html">Giving Back</a></li>
+          <li><a href="listOurPurpose.html">Our Purpose</a></li>
+        </ol>
+      </li>
+      <li>
+        <h3>Customer Care</h3>
+        <ol>
+          <li><a href="supportShippingPolicy.html">Shipping Information</a></li>
+          <li><a href="supportReturnPolicy.html">Returns &amp; Exchanges</a></li>
+          <li><a href="listOurPurpose.html">Our Purpose</a></li>
+        </ol>
+      </li>
+      <li>
+        <h3>Account</h3>
+        <ol>
+          <li><a href="ordersMyOrders.html">Order Status</a></li>
+          <li><a href="ordersMypage.html">My Account</a></li>
+          <li><a href="listLoyaltyProgram.html">Loyalty Program</a></li>
+        </ol>
+      </li>
+    </ul>
+    <div>
+      <ol>
+        <li><a href="supportPrivacyPolicy.html">Privacy Policy</a></li>
+        <li><a href="supportTerms.html">Terms</a></li>
+        <li><a href="supportCookiePolicy.html">Cookie Policy</a></li>
+        <li><a href="supportAccessibility.html">Accessibility</a></li>
+      </ol>
+      <ol>
+        <li><a href="https://in.pinterest.com/lovephilosophy" target="_blank" aria-label="Pinterest" class="xi-pinterest-p"></a></li>
+        <li><a href="https://www.instagram.com/lovephilosophy" target="_blank" aria-label="Instagram" class="xi-instagram"></a></li>
+        <li><a href="https://www.facebook.com/philosophyus" target="_blank" aria-label="Facebook" class="xi-facebook"></a></li>
+        <li><a href="https://www.tiktok.com/@philosophy" target="_blank" aria-label="TikTok"><img src="img/tiktok_wh.png" alt="TikTok"></a></li>
+      </ol>
+    </div>
+  </footer>
+</body>
+</html>

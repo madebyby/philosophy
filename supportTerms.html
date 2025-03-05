@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>philosophy</title>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script src="js/jquery.fitvids.js"></script>
+  <script src="js/philosophy.js"></script>
+  <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+  <div id="cartPanel">
+    <h2>
+      cart
+      <button type="button" class="xi-close closeBtn">Close Button</button>
+    </h2>
+    <form action="ordersCart.html">
+      <ul>
+        <li>
+          <img src="img/skincare_cleansers_product01_01.webp" alt="one-step facial cleanser Image">
+          <div>
+            <dl>
+              <dt>one-step facial cleanser</dt>
+              <dd>8oz</dd>
+            </dl>
+            <div class="numberComponent">
+              <input type="button" value="-" class="countDown">
+              <span>1</span>
+              <input type="button" value="+" class="countUp">
+            </div>
+            <button type="button" class="xi-trash trashBtn" data-panel="cartTrashPopup" aria-label="Remove Button"></button>
+            <strong>$34.00</strong>
+          </div>
+        </li>
+      </ul>
+      <div id="cartTrashPopup">
+        <p>Are you sure you want to delete the product?</p>
+        <input type="button" value="yes">
+        <input type="button" class="closeBtn" value="no">
+      </div>
+      <p>
+        Your cart is currently empty.
+      </p>
+      <div>
+        <input type="submit" value="CHECKOUT $34.00 USD">
+        <p>or 4 interest-free payments of $5.50 with <span>Afterpay</span></p>
+      </div>
+    </form>
+    <div>
+      <h3>recommended products</h3>
+      <ul class="cartBoxSlider">
+        <li>
+          <div>
+            <img src="img/skincare_cleansers_product05_01.webp" alt="one-step facial cleanser with tumeric extract">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_skincare_cleansers_product05.html">one-step facial cleanser with tumeric extract</a></dt>
+            <dd>Very oversized &amp; angular, large metal trim, flat lens</dd>
+            <dd>$28</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/bathBody_fragranceBath_product05_01.webp" alt="lavender hydrating shower gel">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_bathBody_fragranceBath_product05.html">lavender hydrating shower gel</a></dt>
+            <dd>amazing grace</dd>
+            <dd>$36</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/fragrance_EDT_product05_01.webp" alt="falling in love eau de toilette">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_fragrance_EDT_product05.html">falling in love eau de toilette</a></dt>
+            <dd>falling in love</dd>
+            <dd>$60</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/gift_skincareGift_product01_01.webp" alt="hydrate & glow skincare gift set">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_gift_skincareGift_product01.html">hydrate &amp; glow skincare gift set</a></dt>
+            <dd>mother's day gift</dd>
+            <dd>$72</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="searchPopup">
+    <h2>
+      <img src="img/philosophylogo.png" alt="philosophy">
+      <button type="button" class="xi-close closeBtn">Close Button</button>
+    </h2>
+    <form>
+      <input type="search" placeholder="Search our store" title="insert your search keyword">
+      <button type="submit" class="xi-search" aria-label="Search Button"></button>
+    </form>
+    <dl>
+      <dt>Popular Suggestions</dt>
+      <dd>fresh cream</dd>
+      <dd>amazing grace</dd>
+      <dd>pure grace</dd>
+      <dd>vanilla</dd>
+      <dd>purity</dd>
+      <dd>skincare</dd>
+      <dd>scent-sational shower gels</dd>
+      <dd>fragrance</dd>
+      <dd>gift sets</dd>
+    </dl>
+  </div>
+
+  <header>
+    <div>
+      <div class="rollingList">
+        <ol>
+          <li>Free ground shipping with $50 order</li>
+          <li>Free 5-piece skincare gift with any $65 purchase. <a href="listbestSellers.html">Shop now</a></li>
+        </ol>
+      </div>
+    </div>
+    <div>
+      <h1>
+        <a href="index_after.html">
+          <img src="img/philosophylogo_wh.png" alt="philosophy">
+        </a>
+      </h1>
+      <button type="button" class="xi-bars" data-panel="hamburgerPanel" aria-label="Nav Hamburger Button"></button>
+      <nav id="hamburgerPanel">
+        <h2>
+          <img src="img/philosophylogo.png" alt="philosophy">
+          <button type="button" class="xi-close closeBtn">Close Button</button>
+        </h2>
+        <ul>
+          <li>
+            <u>Trending now</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Trending now</span></li>
+                  <li><a href="listBestSellers.html">Best Sellers</a></li>
+                  <li><a href="listSummerEssentials.html">Summer Essentials</a></li>
+                  <li><a href="listNewArrivals.html">New Arrivals</a></li>
+                  <li><a href="listLoyaltyProgram.html">Philosophy Loyalty Program</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav1_1.webp" alt="Ultimate miracle worker">
+                    <figcaption>
+                      <strong>Ultimate miracle worker</strong>
+                      smooth fine lines, brighten your complexion, &amp; revitalize your skin with our new breakthrough
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav1_2.webp" alt="6-Piece gift on us">
+                    <figcaption>
+                      <strong>6-Piece gift on us</strong>
+                      enjoy free 6-piece best sellers gift set with any $60 purchase. limited time only!
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Skincare</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Skincare</span></li>
+                  <li><a href="listCleansersToners.html">Face Cleansers &amp; Toners</a></li>
+                  <li><a href="listMoisturizers.html">Face Moisturizer</a></li>
+                  <li><a href="listSerumsTreatments.html">Face Serums &amp; Treatments</a></li>
+                  <li><a href="listMasksPeels.html">Face Masks &amp; Peels</a></li>
+                  <li><a href="listEyeCreamsSerums.html">Eye Creams &amp; Serums</a></li>
+                  <li><a href="listLipCare.html">Lip Care</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav2_1.webp" alt="Miracle worker">
+                    <figcaption>
+                      <strong>Miracle worker</strong>
+                      spf 30 is irritation-free and perfect for the summer sun.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav2_2.webp" alt="More radiant appearance">
+                    <figcaption>
+                      <strong>More radiant appearance</strong>
+                      transform and renew dull skin and fine lines, resulting in a smoother, more radiant appearance.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Bath &amp; Body</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Bath &amp; Body</span></li>
+                  <li><a href="listBathShowerGelss.html">Fragrance Bath &amp; Shower Gels</a></li>
+                  <li><a href="listScentSationalShowerGels.html">Scent-Sational Shower Gels</a></li>
+                  <li><a href="listBodyLotionsCreams.html">Body Lotions &amp; Creams</a></li>
+                  <li><a href="listShampoo.html">Shampoo</a></li>
+                  <li><a href="listHandCreams.html">Hand Creams</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav3_1.webp" alt="Clinically proven to reduce">
+                    <figcaption>
+                      <strong>Clinically proven to reduce</strong>
+                      ditch the crepe, embrace the glow. enjoy glowing, hydrated, &amp; youthful skin.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav3_2.webp" alt="Upgrade your shower routine">
+                    <figcaption>
+                      <strong>Upgrade your shower routine</strong>
+                      shower gels and enjoy ultra creamy lather &amp; lasting hydration.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Fragrance</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Fragrance</span></li>
+                  <li><a href="listEauDeToilettes.html">Eau de Toilettes</a></li>
+                  <li><a href="listEauDeParfums.html">Eau de Parfums</a></li>
+                  <li><a href="listFragranceGifts.html">Fragrance Gifts</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav4_1.webp" alt="Vanilla musk">
+                    <figcaption>
+                      <strong>Vanilla musk</strong>
+                      indulge in our an inspired twist on our classic cream fragrance that adds a hints of vanilla musk.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav4_2.webp" alt="Meet radiant grace perfume">
+                    <figcaption>
+                      <strong>Meet radiant grace perfume</strong>
+                      a warm, empowering blend of jasmine, caramelized sandalwood, &amp; black cherry.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Gift Sets</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Gift Sets</span></li>
+                  <li><a href="listGiftsSkincareGifts.html">Skincare Gifts</a></li>
+                  <li><a href="listGiftsBathBodyGifts.html">Bath &amp; Body Gifts</a></li>
+                  <li><a href="listGiftsFragranceGifts.html">Fragrance Gifts</a></li>
+                  <li><a href="listGiftsUnder.html">Gifts Under $50</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav5_1.webp" alt="hope &amp; grace">
+                    <figcaption>
+                      <strong>hope &amp; grace</strong>
+                      travel like a pro with our all in one minis set will transform your skin.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav5_2.webp" alt="6-Piece gift on us">
+                    <figcaption>
+                      <strong>6-Piece gift on us</strong>
+                      enjoy our iconic amazing grace clean and beautifully feminine scent.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>  
+            </div>
+          </li>
+          <li>
+            <u>Discover</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Discover</span></li>
+                  <li><a href="listAboutUs.html">About Us</a></li>
+                  <li><a href="listHopeGrace.html">Hope &amp; Grace</a></li>
+                  <li><a href="listOurPurpose.html">Our Purpose</a></li>
+                  <li><a href="listLoyaltyProgram.html">Loyalty Program</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav6_1.webp" alt="Your purchases support women's mental health initiatives through hope grace.">
+                    <figcaption>
+                      your purchases help us to support community-based initiatives to improve the mental health of women through our hope &amp; grace initiative.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav6_2.webp" alt="Committed to eco-friendly packaging.">
+                    <figcaption>
+                      we are committed to developing responsible packaging that respects the environment and reduces impact on the planet &amp; the people who live here
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+        </ul>
+        <ol>
+          <li><button type="button" data-panel="searchPopup" aria-label="Search Button">Search</button></li>
+          <li><a href="ordersWishList.html" aria-label="Wish List">Wish List</a></li>
+        </ol>
+      </nav>
+      <ul>
+        <li><button type="button" class="xi-search" data-panel="searchPopup" aria-label="Search Button"></button></li>
+        <li><a href="ordersWishList.html" class="xi-heart" aria-label="Wish List"></a></li>
+        <li><a href="ordersMypage.html">My page</a></li>
+        <li><button type="button" class="xi-market" data-panel="cartPanel" aria-label="Orders Cart"></button></li>
+      </ul>
+    </div>    
+  </header>
+
+  <div class="termsContainer">
+    <aside>
+      <h2>Terms Of Service</h2>
+      <ul class="accComponent">
+        <li>
+          <h3>Account</h3>
+          <ol>
+            <li><a href="accountProfile.html">Profile</a></li>
+            <li><a href="accountAddressBook.html">Address Book</a></li>
+          </ol>
+        </li>
+        <li>
+          <h3>Orders</h3>
+          <ol>
+            <li><a href="ordersMyOrders.html">My Orders</a></li>
+            <li><a href="ordersWishList.html">Wish List</a></li>
+            <li><a href="ordersCart.html">Cart</a></li>
+          </ol>
+        </li>
+        <li>
+          <h3>Support</h3>
+          <ol>
+            <li><a href="supportfaqs.html">faqs</a></li>
+            <li><a href="supportShippingPolicy.html">Shipping &amp; Returns</a></li>
+            <li><a href="supportAccessibility.html">Accessibility</a></li>
+            <li><a href="supportPrivacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="supportCookiePolicy.html">Cookie Policy</a></li>
+            <li><a href="supportTerms.html">Terms Of Service</a></li>
+          </ol>
+        </li>
+      </ul>
+    </aside>
+    <article>
+      <ol>
+        <li>Support</li>
+        <li>Terms Of Service</li>
+      </ol>
+      <div>
+        <h2>TERMS OF SERVICE</h2>
+        <b>Effective date: [April 19, 2023] </b>
+        <p>These Terms are a legal agreement between Coty DTC Holdings, LLC, located at 350 5th Avenue, 19th Floor, New York, NY 10118-0110, on behalf of itself and its subsidiaries and affiliates (“philosophy,” “us,” “our” and “we”) and you and, if applicable, the entity or person on whose behalf you are entering into these Terms (also referred to as “your”).</p>
+        <span>PLEASE READ THESE TERMS (“Terms”) CAREFULLY.  BY CLICKING THE BOX AND/OR USING THIS WEBSITE, PHILOSOPHY.COM (“Website”), AND/OR PLACING AN ORDER ON THE WEBSITE, YOU AGREE TO BE BOUND BY THESE TERMS.  IF YOU DO NOT AGREE WITH THESE TERMS, PLEASE DO NOT CLICK THE BOX OR ACCESS THIS WEBSITE OR PLACE AN ORDER. </span>
+        <p>We recommend that you print or otherwise download and save a copy of these Terms for your records, as well as any future versions of them, as we may update them from time to time.  You can download a printable copy of these Terms. </p>
+        <p>The Website is provided for users in and shipments to the United States.</p>
+      </div>
+      <ul>
+        <li>
+          <h3>IMPORTANT NOTE</h3>
+          <p>THESE TERMS CONTAINS LANGUAGE THAT GOVERN HOW YOU CAN BRING CLAIMS BETWEEN YOU AND PHILOSOPHY, INCLUDING REQUIRING MANDATORY BINDING ARBITRATION AND A CLASS ACTION WAIVER IN SECTION 25 BELOW. REVIEW THE ARBITRATION LANGUAGE IN SECTION 25 CAREFULLY, AS IT REQUIRES YOU TO RESOLVE ALL DISPUTES WITH PHILOSOPHY ON AN INDIVIDUAL BASIS AND, WITH LIMITED EXCEPTIONS, THROUGH FINAL AND BINDING ARBITRATION, YOU ARE WAIVING YOUR RIGHT TO SEEK RELIEF IN A COURT OF LAW AND TO HAVE A JURY TRIAL ON YOUR CLAIMS. BY AGREEING TO THESE TERMS, YOU EXPRESSLY ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTOOD ALL OF THESE TERMS AND HAVE TAKEN TIME TO CONSIDER THE AFFECT TO YOUR LEGAL RIGHTS.</p>
+          <p>Please also read carefully the sections titled “RETURNS; REFUNDS”, “PRICE AND PAYMENT”, “EXCLUSIONS AND LIMITATIONS OF LIABILITY”, “INDEMNIFICATION”, AND “DISCLAIMERS”.  These provisions impact your ability to cancel or return orders and limit our liability to you.  California residents, for more information on your rights under the California Consumer Privacy Act (“CCPA”) please review the “WHAT ARE MY DATA PROTECTION CHOICES AND RIGHTS?” section of our Privacy Policy.</p>
+          <p>YOU MAY NOT ACCESS THIS SITE OR ORDER PRODUCTS OR SERVICES FROM THIS WEBSITE IF YOU (A) DO NOT AGREE TO THESE TERMS, (B) ARE NOT THE OLDER OF (i) AT LEAST 18 YEARS OF AGE OR (ii) LEGAL AGE TO FORM A BINDING CONTRACT WITH PHILOSOPHY, OR (C) ARE PROHIBITED FROM ACCESSING OR USING THIS WEBSITE OR ANY OF THIS WEBSITE'S </p>
+        </li>
+        <li>
+          <h3>OUR DETAILS</h3>
+          <p>Coty DTC Holdings, LLC operates the Website and sells goods and services. </p>
+          <p>Coty DTC Holdings, LLC is a Delaware limited liability company. </p>
+          <p>Our address is 350 5th Avenue, 19th Floor, New York, NY 10118-0110. </p>
+          <p>Click on this link to contact us via email: customercare@philosophy.com </p>
+        </li>
+        <li>
+          <h3>YOUR RESPONSIBILITY FOR OTHERS WHO ACCESS OUR WEBSITE USING YOUR DEVICE </h3>
+          <p>You must ensure that any persons who access our Website on your computer(s) or device(s), or who are permitted or able to access our Website on your computer(s) or device(s) are aware of these Terms and all other documentation referred to in them, and that such persons also agree to be bound by and to comply with these Terms.  If for any reason whatsoever, such persons do not agree to these Terms or do not wish to be bound by them, they must not access or use our Website, and you must not permit them to do so. </p>
+        </li>
+        <li>
+          <h3>OTHER DOCUMENTS GOVERNING YOUR USE OF OUR WEBSITE</h3>
+          <b>We provide this Website to you subject to these Terms as well as:</b>
+          <ol class="supTextBox">
+            <li>Our Privacy Policy, which is available at You acknowledge that all information you provide through this Website or otherwise, including, but not limited to, through the use of any interactive features on the Website and Account registration, is governed by our Privacy Policy, and you consent to all actions we take with respect to your information consistent with our Privacy Policy.  It sets out the types of information we collect, the reasons we collect it, how we use it, where we may pass it on to any third parties, in what circumstances and for what reasons, and any other relevant information relating to our use and/or processing of your information and your rights in relation to your information. </li>
+            <li>Our Cookies Policy, which is available at   Our cookies policy governs our use of cookies and similar technologies on our Website.  It sets out the types of cookies we use, the purposes for which we use them, the circumstances in which we may place cookies on your computer, device or browser, and other relevant information relating to cookies, such as how to change your browser preferences and settings to accept or reject cookies. </li>
+          </ol>
+        </li>
+        <li>
+          <h3>CHANGES TO THESE TERMS</h3>
+          <p>We reserve the right to update these Terms from time to time in our sole discretion.  All changes are effective immediately when we post them and apply to all access and use of the Website and all orders placed thereafter. </p>
+          <p>If you use the Website or place an order after we post a revised version of these Terms, your order will be governed by the revised Terms.  You can find out whether these Terms have been revised since your last visit to this Website by looking at the effective date at the top of these Terms. </p>
+          <p>You must check these Terms each time you access our Website in order to ensure that you are aware of the terms that apply to you at that time. </p>
+        </li>
+        <li>
+          <h3>YOUR ACCOUNT DETAILS</h3>
+          <p>Access to and use of certain functionalities and features of the Website may require you to register for a user account (“Account”) with us. Accounts are intended for individual, personal, non-commercial use.  If you decide to register an Account with us, you will provide us certain information to create and access your Account.  You agree to provide us with accurate, complete and current information about yourself during Account registration and at all other times, including, without limitation, when you place an order, and you agree to update all information provided to us or requested by us if, and as soon as, such information changes and before you place an order.  You agree to keep your log-in information confidential and to not authorize any third party to use your Account.  You agree that you will not solicit, collect or use the login credentials of other individuals, and you agree not to impersonate any other person or entity or to use a false name or a name that you are not authorized to use.  We prohibit the creation of, and you agree that you will not create, an Account for anyone other than yourself.  We will not be liable for any loss or damage that results from the unauthorized use of your Account, either with or without your knowledge.  You are fully responsible for your failure to safeguard information or for permitting any other person to access or use your Account, and you agree that we may attribute all use of your Account to you.  You agree to notify us immediately by clicking on the Contact Us page, if you suspect any unauthorized use of your Account or any other breach of security.  You may not sell or otherwise transfer your Account.  We have the right to cancel or suspend your registration for any reason or for no reason at any time, as determined in our sole discretion. </p>
+        </li>
+        <li>
+          <h3>INTELLECTUAL PROPERTY</h3>
+          <p>All trademarks, service marks, trade names, logos, copyright and other intellectual property rights displayed on or used in our Website as well as its contents, features, and functionalities are either owned by us or licensed to us.  All such rights are protected by United States and international copyright, trademark, patent, trade secret, and other intellectual property and proprietary rights law laws, and all rights are reserved.  Any use of the Website and its contents, other than as specifically authorized herein, is strictly prohibited. </p>
+          <p>Any trademarks, service marks, trade names, logos and other branding owned by third parties and used or displayed on or via our Website (collectively, “Third Party Mark(s)”) are owned by their respective owners. Display of Third Party Marks on the Website does not indicate endorsement by or affiliation of Philosophy with such third party owner.</p>
+          <p>Except as expressly provided in these Terms, nothing in these Terms or on or via the Website should be construed as granting, by implication, estoppel, or otherwise, any license or right to use any of our or any Third Party Marks that are displayed on or via the Website, without the respective owner’s prior written permission, in each instance. </p>
+        </li>
+        <li>
+          <h3>CONTENT ON OUR WEBSITE</h3>
+          <p>The content on our Website is provided for your personal, private and non-commercial use only.  You may print or share the content from our Website for lawful personal, private and non-commercial purposes.  You may not otherwise extract, reproduce, modify, create derivative works of, publicly display, publicly perform, republish, download, store, transmit or distribute the content of our Website without our prior written consent, except as follows: </p>
+          <ol class="supTextBox">
+            <li>Your computer may temporarily store copies of such materials in RAM incidental to your accessing and viewing those materials.</li>
+            <li>You may store files that are automatically cached by your Web browser for display enhancement purposes.</li>
+            <li>You may print or download one copy of a reasonable number of pages of the Website for your own personal, non-commercial use and not for further reproduction, publication, or distribution.</li>
+            <li>If we provide desktop, mobile, or other applications for download, you may download a single copy to your computer or mobile device solely for your own personal, non-commercial use, provided you agree to be bound by our end user license agreement for such applications.</li>
+          </ol>
+          <b>You must not:</b>
+          <ol class="supTextBox">
+            <li>Modify copies of any materials from this Website.</li>
+            <li>Use any illustrations, photographs, video or audio sequences, or any graphics separately from the accompanying text.</li>
+            <li>Delete or alter any copyright, trademark, or other proprietary rights notices from copies of materials from this site.</li>
+          </ol>
+          <p>If you print, copy, modify, download, or otherwise use or provide any other person with access to any part of the Website in breach of the Terms, your right to use the Website will stop immediately and you must, at our option, return or destroy any copies of the materials you have made.  No right, title, or interest in or to the Website or any content on the Website is transferred to you, and all rights not expressly granted are reserved by us.  Any use of the Website not expressly permitted by these Terms is a breach of these Terms and may violate copyright, trademark, and other laws.</p>
+        </li>
+        <li>
+          <h3>RELIANCE ON INFORMATION AND CONTENT </h3>
+          <p>Our Website is made available to you in order to provide you with general information about us, our business, and any products or services that we offer from time to time.  We do not warrant the accuracy, completeness, or usefulness of this information.  This Website may include content provided by third parties, including materials provided by other users and third-party licensors, syndicators, aggregators, and/or reporting services.  All statements or opinions expressed in these materials, and all articles and responses to questions and other content, are solely the opinions and the responsibility of the person or entity providing those materials.  These materials do not necessarily reflect our opinion.  We are not responsible or liable to you or any third party for the content or accuracy of any third party materials.  
+          </p>
+          <p>The content on our Website is not intended to be construed as advice.  Any reliance you place on such information is strictly at your own risk.  We disclaim all liability and responsibility arising from any reliance placed on such materials by you or any other visitor to the Website, or by anyone who may be informed of any of its contents.  </p>
+        </li>
+        <li>
+          <h3>PROHIBITED USES OF OUR WEBSITE </h3>
+          <p>You must not, without our prior written consent, access, interfere with, damage or disrupt in any way our Website or any part of it, our systems, any of our hardware or equipment or any networks on which our Website is hosted, any software that we use to create or modify the Website or to make the Website available to you, or any hardware, equipment, network, server, software or technology owned or operated by us or any third party.  </p>
+          <b>You must use our Website for lawful purposes only and in accordance with these Terms.  You must not use our Website: </b>
+          <ol class="supTextBox">
+            <li>for any fraudulent or unlawful purposes whatsoever; </li>
+            <li>to conduct any unsolicited or unauthorized advertising or direct or indirect marketing to anyone by any means, or to otherwise spam, communicate with or market to anyone any goods, services or business not authorized by us; </li>
+            <li>to upload, host or transmit any viruses, malware, adware, spyware, worms, Trojan horses, keystroke loggers, spyware, logic bombs, time bombs or any other harmful programs or code which could adversely affect the use or operation of the Website, our hardware or systems, or the computers, tablets, phones or other devices of any users or other third parties, or to upload any content or materials containing any such content;</li>
+            <li>to use any robot, spider, or other automatic device, process (whether automatic or manual), or means to access the Website for any purpose, including monitoring or copying any of the material on the Website;</li>
+            <li>to communicate with, exploit, harm or attempt to harm minors in any way;</li>
+            <li>to attempt to gain unauthorized access to, interfere with, damage, or disrupt any parts of the Website, the server on which the Website is stored, or any server, computer, or database connected to the Website; to engage in any other conduct that restricts or inhibits anyone’s use of enjoyment of the Website, interferes with the proper working of the Website, or which, as determined by us, may harm us or users of the Website, or expose them or us to liability; or</li>
+            <li>in any way or for any purpose that breaches these Terms or the terms of any of the documents to which these Terms refer.</li>
+          </ol>
+        </li>
+        <li>
+          <h3>GEOGRAPHIC RESTRICTIONS</h3>
+          <p>
+            The Website is provided for users in the United States.  Although it may be possible to access the Website from other countries, we make no representation that our Website is compliant with any legal requirements in force in any jurisdiction other than the United States, or that the content available on the Website will be appropriate for users in other countries or states.  If you access the Website from outside the United States, you do so on your own initiative and are responsible for compliance with local laws.
+          </p>
+        </li>
+        <li>
+          <h3>LINKS TO OTHER WEBSITES</h3>
+          <p>If the Website contains links to other sites and resources provided by third parties, these links are provided for your convenience only.  This includes links contained in advertisements, including banner advertisements and sponsored links.  We are not responsible for the content of any websites accessible via any link(s) on our Website (“Linked Sites”).  We do not endorse or sponsor any Linked Sites or the information, products, or services contained on any Linked Sites.  Linked Sites are governed by their own terms of use and privacy policies.  You may need to use or obtain additional products or services in order to use the Linked Sites, such as a mobile device, internet access, and a data connection.  You must obtain or use these products or services separately and pay all associated charges (including for internet access or other data transmission).  All content on Linked Sites is outside of our control, and we do not represent or warrant that such content is related to us or our Website, suitable or appropriate for use or viewing, lawful or accurate. </p>
+        </li>
+        <li>
+          <h3>TEXT MESSAGES </h3>
+          <p>By providing us with your cell phone number (including as part of your Account), you agree to receive autodialed and pre-recorded, non-marketing, service-related text messages from or on behalf of us at the phone number provided. You further agree to receiving autodialed and pre-recorded text messages from or on behalf of us at the number provided for marketing or promotional purposes.</p>
+          <p>Message and data rates may apply. The frequency of text messages that we send to you depends on your transactions with us. All charges are billed by and payable to your wireless service provider.  Please contact your wireless service provider for pricing plans and details.  Text message services are provided on an “as is” basis and may not be available in all areas at all times. If you do not wish to continue receiving text message, you agree to reply STOP, END, CANCEL, UNSUBSCRIBE, or QUIT to any mobile message from us in order to opt out.  You may receive an additional mobile message confirming your decision to opt out.</p>
+          <p>BY AGREEING TO RECEIVE TEXT MESSAGES, YOU UNDERSTAND AND AGREE THAT WE MAY USE AN AUTOMATIC DIALING SYSTEM TO DELIVER TEXT MESSAGES TO YOU AND THAT YOUR CONSENT TO RECEIVE TEXT MESSAGES IS NOT REQUIRED AS A CONDITION OF PURCHASE FOR ANY GOODS OR SERVICES.</p>
+        </li>
+        <li>
+          <h3>PRODUCT PURCHASES </h3>
+          <p>To place an order for products on the Website, you should press the ‘pay now’ button at the end of the checkout process. You will be guided through the process of placing an order by a series of simple instructions on the Website. </p>
+          <p>At the checkout you will be given an opportunity to review your order, including the delivery address, to make any amendments prior to placing an order. 
+          </p>
+          <p>You will receive an order confirmation email detailing the products you have ordered. This email does not constitute our acceptance of your order. Order acceptance will take place on the shipment of your products ordered. 
+          </p>
+          <p>If we are unable to accept your order, we will inform you of this via email and will not charge you for the product. If we have taken payment prior to non-acceptance of your order then we will refund you, but please note that it can take up to 14 business days for the bank to transfer the funds to you. Non acceptance of an order may be because, but is not limited to, the following: </p>
+          <ol class="supTextBox">
+            <li>The product is out of stock; </li>
+            <li>we were unable to authorize your payment or your billing information is not verifiable; </li>
+            <li>because of unexpected limits on our resources which we could not reasonably plan for; </li>
+            <li>an error in the price or description of the product; </li>
+            <li>in our sole discretion, the order appears to be placed by dealers, resellers or distributors or otherwise appears fraudulent; </li>
+            <li>your order is flagged by our security systems as an unusual order or an order susceptible to fraud; </li>
+            <li>we could not deliver to the address provided by you; or </li>
+            <li>due to an event outside of our control (as further set forth herein). </li>
+          </ol>
+          <p>We will assign an order number to your order. It will help us if you can tell us the order number whenever you contact us about your order.</p>
+          <p>The transaction will be concluded in English. </p>
+          <p>The Website is intended solely for philosophy to sell philosophy products direct to end consumers, and therefore purchase of products for resale is strictly prohibited. Purchase for resale means the purchase of a philosophy product by someone who resells, or intends to resell, the philosophy product to others (consumers, businesses or any third party).  If philosophy believes you are involved in purchase for resale, philosophy reserves the right to take any action against you, including, without limitation, to restrict sales to you, cancel your orders, and/or suspend or close your Account. </p>
+        </li>
+        <li>
+          <h3>OUR PRODUCTS</h3>
+          <p>All orders are subject to acceptance and availability, which may vary depending on the shipping destination. Each product purchased is sold subject to its product description. We will take all reasonable care to ensure that all details, descriptions and prices of products appearing on the Website are correct, however, we cannot guarantee the Website’s accuracy and we may, on occasion, make inadvertent typographical errors, inaccuracies or omissions related to pricing and availability. We reserve the right to correct any errors, inaccuracies, or omissions at any time and to cancel any orders arising from such occurrences. </p>
+          <p>The images of the products on our Website are for illustrative purposes only. Your product and its packaging may vary slightly from its advertised images on the Website, as a result of your device’s display of color. 
+          </p>
+          <p>If you have any questions or complaints about any product, please contact our customer care team at customercare@philosophy.com.</p>
+        </li>
+        <li>
+          <h3>CHANGING YOUR ORDER</h3>
+          <p>Due to the nature and speed involved with the philosophy fulfilment process, once your order has been placed and either payment processed or order shipped from our warehouse (whichever occurs first), we will be unable to change the details of your order (such as delivery address, product types or quantity).  This in no way affects your legal right to cancel, as provided herein.  If you have any questions, please contact our customer care team at customercare@philosophy.com. </p>
+          <p>For unwanted products, you’ll need to follow our cancellation procedure set forth herein and if you would like to add products to an order, you will need to place a new order. </p>
+        </li>
+        <li>
+          <h3>RETURNS; REFUNDS</h3>
+          <p>Except for any products designated on the website as non-returnable, we will accept a return of the products purchased on the Website for a refund of your purchase price, less the original shipping and handling costs (if any), provided such return is made within 14 days of delivery and provided such products are returned in their original condition and original packaging (i.e., sealed and unopened), as determined in philosophy’s sole discretion. We will not accept products that have been opened or used. If you received a gift with purchase, you are obligated to return the gift along with your qualifying items otherwise your return will not be accepted.</p>
+          <ol class="supTextBox">
+            <li>To initiate a return: Populate and submit the Contact Us form or contact us at customercare@philosophy.com.</li>
+            <li>The request will be reviewed and if approved, the customer care team will provide a return shipping label.</li>
+            <li>Within seven (7) days of submitting this form, pack the product(s) in the original box, affix a return and shipping label to each box, and deliver the box to a mail carrier for return.</li>
+            <li>Upon receipt of your returned goods at our warehouse, we will review the condition of your goods, validate you have returned all products in question and then approve or reject the refund.</li>
+            <li>If we are processing a refund, you can expect the credit on your statement within fourteen (14) business days after the warehouse approves the refund.</li>
+          </ol>
+          <p>Note: you will not be reimbursed for the cost(s) of return shipping. Reimbursement will occur after we receive your returned product, undamaged. Our customer care team may be unable to assist you with any questions you have about the status of your return.</p>
+          <p>You are also entitled to a refund in the event that the product arrives damaged. This does not affect your statutory rights. In the event your claim is justified, the purchase price and the shipping costs will be refunded. To request a refund for a damaged product, you must contact our customer care team by writing to us using the Contact Us form within forty-eight (48) hours of delivery. We will request photos of the product and a copy of your confirmation email. We will inform you of the disposition of the damaged product.  </p>
+          <p>Any refunds will be issued based on the original form of payment in the currency used to pay for the original transaction. If you paid via bank transfer you need to give this information to our customer care team when you initiate the return so that we can refund the money directly to your account.  </p>
+          <p>For any requests for refund, you must contact our customer care team by writing to us at customercare@philosophy.com or contacting us via our Contact Us Form, including details of: your name; your address; the order number and reason for request; your phone number; and your email address. </p>
+          <p>philosophy does not accept returns of products purchased on this Website at any standalone stores, department stores, spas, or concession locations.</p>
+        </li>
+        <li>
+          <h3>OUR ONLINE STORE</h3>
+          <p>Our store is hosted on Shopify Inc. (“Shopify”). It provides us with our online e-commerce platform that allows us to sell our products to you. Shopify will process your order request and your payment; please see Section 20 below for more information regarding payments. By submitting your order, you agree to Shopify processing your order. </p>
+          <p>Your data is stored through Shopify’s data storage, databases and the general Shopify application.. For more information, please see our Privacy Policy. You should also read Shopify’s Privacy Statement. </p>
+        </li>
+        <li>
+          <h3>PRICE AND PAYMENT</h3>
+          <p>The price of the product will be the price indicated on the email acknowledgment sent by us on completion of your order online. It is always possible that, despite our best efforts, some of the products we sell may be incorrectly priced online. </p>
+          <p>Product prices shown on the Website are in U.S. Dollars and are valid and effective only in the United States. Product prices shown on the Website may change from time to time. Such prices do not include shipping and handling costs and do not include sales taxes where applicable. You are responsible for any state and local sales or use taxes that may apply to your order, which will be added to your total invoice price during the checkout process. </p>
+          <p>If you choose to pay using a payment card with a currency denominated account that is different from the currency of your order, additional charges and foreign exchange differences may apply. These charges and exchange rates applied are beyond our control. </p>
+          <p>You can find the available payment methods during the checkout process. We accept payment with [Afterpay, Visa, Mastercard, American Express, Paypal, Apple Pay, Google Pay and Shop Pay]. Credit card payment, including recurring charges, are handled through third party payment processors. These third-party payment processors will collect and retain your credit card information in order to process your payment. For more information, please review our Privacy Policy. 
+          </p>
+          <p>Full payment is due upon order placement, and you will be charged when you press the 'pay now’ button at the end of the checkout process, unless we are unable to accept your order as set forth in Section 14.</p>
+          <p>By placing your order and making an offer to buy a product, you authorize us and Shopify to transmit information (including any updated information) or to obtain information about you from third parties from time to time and this may include verification checks involving your debit or credit card number or credit reports, e.g., in order to authenticate your identity. 
+          </p>
+          <p>You represent and warrant that (i) the credit card information you supply is true, correct and complete, (ii) you are duly authorized to use such credit card for the purchase, (iii) charges incurred by you will be honored by your credit card company, and (iv) you will pay charges incurred by you at the posted prices, including shipping and handling charges and all applicable taxes, if any, regardless of the amount quoted on the Website at the time of your order. </p>
+        </li>
+        <li>
+          <h3>PRODUCT RESTRICTIONS</h3>
+          <p>There may be instances where due to restrictions (legal or otherwise) or practices in relation to a product, we are prevented from being able to deliver it to you. We shall not be held liable in relation to any product that we are unable to sell or deliver to you as a result of such restrictions. In the event that a restriction is enforced after you have placed your order with us, we will do our utmost to notify you as soon as reasonably practicable.  </p>
+        </li>
+        <li>
+          <h3>DISCOUNT CODES</h3>
+          <p>We may offer discount codes applicable to certain products or orders on the Website during a given time period. Each discount code may have separate applicable promotional terms. Unless otherwise stated in applicable separate promotional terms: (i) you may only use one discount code per order; (ii) discount codes cannot be applied to previous orders and cannot be redeemed for cash or combined with any other promotions or offers; (iii) discount codes do not apply to sales tax, shipping or return costs; and (iv) discount codes are not valid for resale. We reserve the right to reject or cancel any orders where the above or applicable promotional terms are violated. If there is a conflict between the terms for a promotion and these Terms, the promotion terms will govern. </p>
+        </li>
+        <li>
+          <h3>PROMOTIONS</h3>
+          <p>From time to time, we may offer you the opportunity to participate in promotions (collectively, “Promotions”).  You may not transfer, assign, sell, trade or barter any prize, premium of other benefit you receive through a Promotion.  ANY PRIZE, PREMIUM, OR OTHER BENEFIT IS AWARDED “AS IS” WITHOUT ANY EXPRESS OR IMPLIED WARRANTY OR GUARANTEE FROM PHILOSOPHY, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.</p>
+          <p>We reserve the right to modify, terminate or suspend the availability of Promotions and to correct errors or inconsistencies in Promotion-related materials.  We may disqualify any individual who tampers with any Promotion.  CAUTION: ANY ATTEMPT BY ANY INDIVIDUAL TO DELIBERATELY UNDERMINE THE LEGITIMATE OPERATION OF A PROMOTION IS A VIOLATION OF CRIMINAL AND CIVIL LAWS AND WE RESERVE THE RIGHT TO SEEK DAMAGES FROM SUCH INDIVIDUAL TO THE FULLEST EXTENT PERMITTED BY LAW.</p>
+          <p>You agree to be bound by our decisions, which are final and binding in all matters relating to Promotions.  Promotions are subject to all applicable federal, state and local laws, rules and regulations.  Promotions are void where they are prohibited, restricted or taxed.</p>
+          <p>BY PARTICIPATING IN A PROMOTION, YOU AGREE TO RELEASE PHILOSOPHY, ITS AFFILIATES AND ITS AGENTS FROM ANY AND ALL LIABILITY, LOSS OR DAMAGE ARISING FROM OR IN CONNECTION WITH PARTICIPATION IN ANY PROMOTION-RELATED ACTIVITY OR THE RECEIPT, USE OR MISUSE OF ANY PRIZE OR PREMIUM THAT YOU MAY RECEIVE. </p>
+        </li>
+        <li>
+          <h3>REVIEWS</h3>
+          <p>If you submit a review, you grant us a non-exclusive, royalty-free, perpetual, irrevocable, and fully sub-licensable right to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such content throughout the world in any media. You grant us and our sub-licensees the right to use the name that you submit in connection with such content if we so choose.</p>
+          <p>You represent and warrant that the content and material of any review submitted is accurate and will not cause injury to any person or entity (and that the content or material is not defamatory or discriminatory in any way).</p>
+        </li>
+        <li>
+          <h3>DELAY AND EVENTS BEYOND OUR CONTROL</h3>
+          <p>We will not be responsible to you for any delay or failure to comply with our obligations under these Terms if the delay or failure arises from any cause beyond our reasonable control. Nothing in this section limits your statutory rights or rights under Section 18. </p>
+        </li>
+        <li>
+          <h3>ARBITRATION</h3>
+          <b>You and philosophy Agree to Arbitrate.</b>
+          <p>You and philosophy agree that any and all claims arising from or relating to these Terms or any good or service provided by us to you and/or the person or entity you represent shall be subject to binding arbitration under the Federal Arbitration Act (“FAA”). This includes claims based on contract, tort, equity, statute, or otherwise, as well as claims regarding the scope and enforceability of this provision. It includes all claims by or against you, us, and/or others providing or receiving any product or service related to these Terms or your purchase(s) or transaction(s) with us. However, at the election of any party, any claims subject to the jurisdiction of a small claims court are not required to be arbitrated; nor are claims for injunctive relief to protect intellectual property rights.</p>
+          <b>Arbitration Procedures.</b>
+          <p>A single, neutral arbitrator shall decide all claims and shall render a final, binding written decision pursuant to the Commercial Arbitration Rules & Procedures of the American Arbitration Association (“AAA”), which rules are found at www.adr.org.  In the arbitration proceeding, the parties shall be entitled to conduct only essential discovery, as determined by the arbitrator, which is adequate to prove the claims or defenses at issue, but in no event will discovery be allowed that is greater than that permitted by the State of New York Rules of Civil Practice Law and Rules.</p>
+          <p>Each party to the arbitration shall pay his, her, or its own costs of arbitration, unless otherwise required by the relevant arbitration rules.  If you cannot afford your arbitration costs, you may apply for a waiver under the relevant rules. </p>
+          <b>Class Action Waiver.</b>
+          <p>Each party waives any right to bring representative claims on behalf of a class of individuals or entities or on behalf of the general public or a consolidation with other arbitrations (the “class action waiver”). The arbitration provision may be severed or modified if necessary to render it enforceable.  For example, if a California court determines that this class action waiver is not enforceable to the extent it prohibits any right to public injunctive relief, if any, all other claims subject to arbitration shall be arbitrated under this provision, with a court to decide any claim for public injunctive relief.</p>
+          <b>Opt-Out of Agreement to Arbitrate.</b>
+          <p>You can decline this agreement to arbitrate by emailing philosophy at customercare@philosophy.com and providing the requested information as follows: (1) Your Name; (2) Your Address; (3) Your Phone Number; and (4) a clear statement that you wish to opt out of this arbitration provision in the Terms. This opt-out notice must be emailed no later than 30 days after the date you first accept the Terms by using the Website.</p>
+        </li>
+        <li>
+          <h3>EXCLUSIONS AND LIMITATIONS OF LIABILITY</h3>
+          <p>We do not exclude our liability to you where it would be unlawful to do so.  If applicable law does not allow all or any part of the below limitations of liability to apply to you, the limitations will apply to you only to the maximum extent permitted by applicable law.</p>
+          <p>SUBJECT TO THE FOREGOING PARAGRAPH, IN NO EVENT SHALL WE (INCLUDING OUR PARENTS, SUBSIDIARIES, AFFILIATES, OFFICERS, DIRECTORS, MEMBERS, EMPLOYEES OR AGENTS) UNDER ANY CIRCUMSTANCES WHATSOEVER BE LIABLE TO YOU FOR ANY LOSS, DAMAGE (WHETHER DIRECT, INDIRECT, PUNITIVE, ACTUAL, CONSEQUENTIAL, INCIDENTAL, SPECIAL, EXEMPLARY, OR OTHERWISE), COSTS, EXPENSES, LIABILITIES OR PENALTIES, WHETHER IN CONTRACT, TORT, BREACH OF STATUTORY DUTY OR OTHERWISE, WHETHER FORESEEABLE OR UNKNOWN, ARISING FROM, IN CONNECTION WITH OR RELATING TO:</p>
+          <ol class="supTextBox">
+            <li>YOUR USE OF OUR WEBSITE; </li>
+            <li>ANY CORRUPTION OR LOSS OF DATA; </li>
+            <li>ANY CONTENT;</li>
+            <li>ANY DEFAMATORY, OFFENSIVE OR ILLEGAL CONDUCT OF ANY THIRD PARTY;</li>
+            <li>ANY INABILITY TO ACCESS OUR WEBSITE, INCLUDING, WITHOUT LIMITATION, ANY INTERRUPTIONS, SUSPENSION OR WITHDRAWAL OF OUR WEBSITE (FOR ANY REASON WHATSOEVER);  </li>
+            <li>ANY USE YOU MAKE OF ANY CONTENT OR MATERIALS ON OUR WEBSITE, INCLUDING ANY RELIANCE YOU MAKE ON SUCH CONTENT OR MATERIAL; </li>
+            <li>ANY LOSS OF SAVINGS, PROFITS, SALES, BUSINESS OR REVENUE; </li>
+            <li>ANY LOSS OF REPUTATION OR GOODWILL; </li>
+            <li>ANY LOSS OF SAVINGS; </li>
+            <li>ANY LOSS OF A CHANCE OR OPPORTUNITY; OR </li>
+            <li>ANY OTHER SECONDARY, CONSEQUENTIAL OR INDIRECT LOSSES, </li>
+            <li>AND EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGE, WITHOUT LIMITATION, YOU ASSUME AND SHALL BE LIABLE FOR THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION IN THE EVENT OF ANY SUCH LOSS, DAMAGE, COSTS, EXPENSES, LIABILITIES OR PENALTIES ARISING.</li>
+            <li>WE SHALL NOT BE LIABLE FOR ANY DAMAGE THAT YOU COULD HAVE AVOIDED BY FOLLOWING OUR ADVICE TO APPLY A TECHNOLOGY OR SOFTWARE UPDATE OFFERED TO YOU FREE OF CHARGE OR FOR DAMAGE THAT WAS CAUSED BY YOU FAILING TO CORRECTLY FOLLOW INSTALLATION INSTRUCTIONS OR TO HAVE IN PLACE THE MINIMUM SYSTEM REQUIREMENTS ADVISED BY US.</li>
+          </ol>
+          <p>To the extent that any of the provisions of this section are unenforceable as outright exclusions of liability, they shall be construed as limitations on liability, limiting our liability to you to the maximum extent permitted by law.</p>
+        </li>
+        <li>
+          <h3>INDEMNIFICATION</h3>
+          <p>You (and also any third party for or on behalf of whom you operate an Account or activity on the Website) agree to defend (at our request), indemnify and hold us harmless from and against any claims, liabilities, damages, losses and expenses, including, without limitation, reasonable legal and attorneys’ fees and costs, arising out of or in any way connected with any of the following (including as a result of your direct activities on the Website or those conducted on your behalf):</p>
+          <ol class="supTextBox">
+            <li>your uploads, access to or use of the Website;</li>
+            <li>your breach or alleged breach of these Terms;</li>
+            <li>your violation of any third-party right, including, without limitation, any intellectual property right, publicity, confidentiality, property or privacy right;</li>
+            <li>your violation of any laws, rules, regulations, codes, statutes, ordinances or orders of any governmental and quasi-governmental authorities, including, without limitation, all regulatory, administrative and legislative authorities; or</li>
+            <li>any misrepresentation made by you.</li>
+          </ol>
+          <p>You will cooperate as fully required by us in the defense of any claim.  We reserve the right to assume the exclusive defense and control of any matter subject to indemnification by you, and you will not, in any event, settle any claim without our prior written consent.</p>
+        </li>
+        <li>
+          <h3>DISCLAIMERS</h3>
+          <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ALL PRODUCTS OFFERED ON THIS SITE ARE PROVIDED “AS IS” WITHOUT ANY WARRANTY WHATSOEVER, INCLUDING, WITHOUT LIMITATION, ANY (A) WARRANTY OF MERCHANTABILITY; (B) WARRANTY OF FITNESS FOR A PARTICULAR PURPOSE; OR (C) WARRANTY AGAINST INFRINGEMENT OF INTELLECTUAL PROPERTY RIGHTS OF A THIRD PARTY; WHETHER EXPRESS OR IMPLIED BY LAW, COURSE OF DEALING, COURSE OF PERFORMANCE, USAGE OF TRADE, OR OTHERWISE. SOME JURISDICTIONS LIMIT OR DO NOT ALLOW THE DISCLAIMER OF IMPLIED OR OTHER WARRANTIES SO THE ABOVE DISCLAIMER MAY NOT APPLY TO YOU. </p>
+          <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE WEBSITE IS PROVIDED ON AN “AS IS”, “AS AVAILABLE” AND “WITH ALL FAULTS” BASIS.  TO THE FULLEST EXTENT PERMISSIBLE BY LAW, WE DO NOT MAKE ANY REPRESENTATIONS OR WARRANTIES OR ENDORSEMENTS OF ANY KIND WHATSOEVER, EXPRESS OR IMPLIED, AS TO: </p>
+          <ol>
+            <li>THE SERVICE; </li>
+            <li>THE WEBSITE CONTENT; </li>
+            <li>USER CONTENT; OR </li>
+            <li>SECURITY ASSOCIATED WITH THE TRANSMISSION OF INFORMATION TO THE WEBSITE.</li>
+          </ol>
+          <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE HEREBY DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, AND STATUTORY WARRANTIES AND CONDITIONS INCLUDING, BUT NOT LIMITED TO, THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, TITLE, CUSTOM, TRADE, QUIET ENJOYMENT, SYSTEM INTEGRATION AND FREEDOM FROM COMPUTER VIRUS.</p>
+          <p>WE DO NOT REPRESENT OR WARRANT THAT THE WEBSITE OR CONTENT WILL BE ERROR-FREE OR UNINTERRUPTED, THAT DEFECTS WILL BE CORRECTED, OR THAT THE WEBSITE OR THE SERVER THAT MAKES THE WEBSITE AVAILABLE WILL BE PROVIDED ON A TIMELY, RELIABLE OR SECURE BASIS, OR IS FREE FROM ANY HARMFUL COMPONENTS, INCLUDING, WITHOUT LIMITATION, VIRUSES, WORMS, OR OTHER HARMFUL OR MALICIOUS COMPONENTS.  WE DO NOT MAKE ANY REPRESENTATIONS OR WARRANTIES THAT THE CONTENT (INCLUDING ANY INSTRUCTIONS) ON THE WEBSITE IS ACCURATE, COMPLETE OR USEFUL.  YOU ACKNOWLEDGE THAT YOUR USE OF THE WEBSITE IS AT YOUR SOLE RISK.  WE DO NOT WARRANT THAT YOUR USE OF THE WEBSITE IS LAWFUL IN ANY PARTICULAR JURISDICTION, AND WE SPECIFICALLY DISCLAIM SUCH WARRANTIES.  SOME JURISDICTIONS LIMIT OR DO NOT ALLOW THE DISCLAIMER OF IMPLIED OR OTHER WARRANTIES SO THE ABOVE DISCLAIMER MAY NOT APPLY TO YOU TO THE EXTENT SUCH JURISDICTION'S LAW IS APPLICABLE TO YOU AND THESE TERMS OF USE.  </p>
+          <p>BY ACCESSING OR USING THE WEBSITE YOU REPRESENT AND WARRANT THAT YOUR ACTIVITIES ARE LAWFUL IN EVERY JURISDICTION WHERE YOU ACCESS OR USE THE SERVICE.  </p>
+          <p>WE DO NOT ENDORSE CONTENT AND SPECIFICALLY DISCLAIM ANY RESPONSIBILITY OR LIABILITY TO ANY PERSON OR ENTITY FOR ANY LOSS, DAMAGE (WHETHER ACTUAL, CONSEQUENTIAL, PUNITIVE OR OTHERWISE), INJURY, CLAIM, LIABILITY OR OTHER CAUSE OF ACTION OF ANY KIND OR CHARACTER BASED UPON OR RESULTING FROM ANY CONTENT.  </p>
+        </li>
+        <li>
+          <h3>AGE RESTRICTIONS ON USE OF OUR WEBSITE</h3>
+          <p>By using this Website, you represent that you are at least the age of majority in your state of residence, or that you are the age of majority in your state of residence and you have given us your consent to allow any of your minor dependents to use this Website.  philosophy and the Website do not knowingly collect information from children under age 18.  If you are between 13 and 17 years of age, when you visit, browse and use the information on the Website, you represent that you have the permission of a parent or guardian to do so and who agrees to these Terms on your behalf; you may not submit any personal information. </p>
+        </li>
+        <li>
+          <h3>SUSPENSION AND TERMINATION</h3>
+          <p>We reserve the right to suspend or terminate access to or withdraw or modify all or part of the Website or your Account for any reason without notice, including for business or operational reasons, such as improving the appearance or functionality of the Website, content updates, periodic maintenance, or to resolve any issues that we become aware of.  You may terminate your Account or your use of the Website at any time. </p>
+          <p>Termination will not limit any of our other rights or remedies.  The sections titled Intellectual Property, Indemnification, Exclusions and Limitations of Liability, Disclaimers, Arbitration, Governing Law, and General and any other provision that is intended to survive termination shall survive termination of these Terms or your access to the Website or Account.  
+          </p>
+          <p>We have the right to cooperate fully with any law enforcement authorities or court order requesting or directing us to disclose the identity or other information of anyone posting any materials on or through the Website.  YOU WAIVE AND HOLD HARMLESS PHILOSOPHY AND ITS AFFILIATES, LICENSEES, AND SERVICE PROVIDERS FROM ANY CLAIMS RESULTING FROM ANY ACTION TAKEN BY ANY OF THE FOREGOING PARTIES DURING, OR TAKEN AS A CONSEQUENCE OF, INVESTIGATIONS BY EITHER SUCH PARTIES OR LAW ENFORCEMENT AUTHORITIES.  </p>
+        </li>
+        <li>
+          <h3>NOTICES</h3>
+          <p>We may give you all required notices (including legal process) by any lawful method, including by posting notices on the Website or by sending it to any email address that you provide to us.  You agree to send us notices by email to customercare@philosophy.com or by mailing them to the following address: </p>
+          <p>Coty DTC Holdings, LLC </p>
+          <p>350 5th Avenue, 19th Floor </p>
+          <p>New York, NY 10118-0110 </p>
+        </li>
+        <li>
+          <h3>GOVERNING LAW; WAIVER OF JURY TRIAL</h3>
+          <p>Except for the arbitration provision, which is governed by the Federal Arbitration Act, these Terms, any documents they refer to, and any disputes arising from or in relation to them or any documents they refer to, whether contractual or non-contractual, shall be governed by and construed in accordance with United States law in the State of New York, without giving effect to any choice or conflict of law provision or rule (whether of the State of New York or any other jurisdiction) that would cause the application of the laws of any jurisdiction other than those of the State of New York.  For any action where Section 25 permits the parties to litigate in court, you further expressly consent and agree to submit to the exclusive jurisdiction and venue of a court of competent jurisdiction located in New York, New York.</p>
+          <p>You and philosophy acknowledge and agree that any controversy that may arise under these Terms or any documents they refer to is likely to involve complicated and difficult issues and, therefore, each party irrevocably and unconditionally waives any right it may have to a trial by jury in respect of any legal action arising out of or relating to these Terms and any documents they refer to, or the transactions contemplated hereby.</p>
+        </li>
+        <li>
+          <h3>NOTICE TO CALIFORNIA RESIDENTS</h3>
+          <p>If the Website is at any time deemed an electronic commercial service (as defined under California Civil Code Section 1789.3), California residents are entitled to the following specific consumer rights information: </p>
+          <p>The provider of the Website is: </p>
+          <p><span>Provider:</span>Coty DTC Holdings, LLC </p>
+          <p><span>Phone:</span>+1-800-568-3151</p>
+          <p><span>E-mail:</span><a href="malito:customercare@philosophy.com">customercare@philosophy.com</a></p>
+          <p>Postal Address: Coty DTC Holdings, LLC, 350 5th Avenue, 19th Floor, New York, NY 10118-0110. </p>
+          <p>If the Website is deemed an electronic commercial service, you may file a complaint regarding the Website or to receive further information regarding use of the Website by sending a letter to the attention of “Legal Department” at the above address.</p>
+        </li>
+        <li>
+          <h3>GENERAL </h3>
+          <p>If any provision of these Terms is determined by a court of competent jurisdiction to be illegal, invalid, or unenforceable, the remaining provisions of these Terms will remain in full force and effect.  You and philosophy intend that the provisions of these Terms be enforced to the fullest extent permitted by applicable law.  Accordingly, you and philosophy agree that if any provision is deemed unenforceable, where possible, it will be modified to the extent necessary to make it enforceable, which may include its deletion.  Section titles are only for convenience and have no legal or contractual significance.  Any list of examples following "including" or "e.g.," is illustrative and not exhaustive, unless qualified by terms like "only" or "solely”.  philosophy may assign these Terms, in whole or in part, at any time, with or without notice to you.  You may not assign, transfer, or sublicense your rights, if any, in your Account, to the Website, or under these Terms.  No waiver by philosophy shall be construed as a waiver of any proceeding or succeeding breach of any provision. These Terms (including any incorporated terms or policies) constitute the entire agreement between you and philosophy with respect to your Account, the Website and your transaction for the purchase of products.  Both you and philosophy warrant to each other that, in entering these Terms, neither philosophy nor you have relied on or will have any right or remedy based upon any statement, representation, warranty, or assurance other than those expressly stated in these Terms.  The preceding sentence will not limit or exclude any liability that cannot be limited or excluded under applicable law.  No one other than you and philosophy, or philosophy’s successors and permitted assigns, will have any right to enforce any of these Terms.</p>
+        </li>
+      </ul>
+    </article>
+  </div>
+
+  <footer>
+    <ul>
+      <li>
+        <h2>
+          <img src="img/philosophylogo_wh.png" alt="philosophy">
+        </h2>
+        <strong>why shop with us</strong>
+        <p>our philosophy is that taking small steps every day leads to your best self</p>
+      </li>
+      <li>
+        <h3>Company</h3>
+        <ol>
+          <li><a href="listAboutUs.html">About Us</a></li>
+          <li><a href="listHopeGrace.html">Giving Back</a></li>
+          <li><a href="listOurPurpose.html">Our Purpose</a></li>
+        </ol>
+      </li>
+      <li>
+        <h3>Customer Care</h3>
+        <ol>
+          <li><a href="supportShippingPolicy.html">Shipping Information</a></li>
+          <li><a href="supportReturnPolicy.html">Returns &amp; Exchanges</a></li>
+          <li><a href="listOurPurpose.html">Our Purpose</a></li>
+        </ol>
+      </li>
+      <li>
+        <h3>Account</h3>
+        <ol>
+          <li><a href="ordersMyOrders.html">Order Status</a></li>
+          <li><a href="ordersMypage.html">My Account</a></li>
+          <li><a href="listLoyaltyProgram.html">Loyalty Program</a></li>
+        </ol>
+      </li>
+    </ul>
+    <div>
+      <ol>
+        <li><a href="supportPrivacyPolicy.html">Privacy Policy</a></li>
+        <li><a href="supportTerms.html">Terms</a></li>
+        <li><a href="supportCookiePolicy.html">Cookie Policy</a></li>
+        <li><a href="supportAccessibility.html">Accessibility</a></li>
+      </ol>
+      <ol>
+        <li><a href="https://in.pinterest.com/lovephilosophy" target="_blank" aria-label="Pinterest" class="xi-pinterest-p"></a></li>
+        <li><a href="https://www.instagram.com/lovephilosophy" target="_blank" aria-label="Instagram" class="xi-instagram"></a></li>
+        <li><a href="https://www.facebook.com/philosophyus" target="_blank" aria-label="Facebook" class="xi-facebook"></a></li>
+        <li><a href="https://www.tiktok.com/@philosophy" target="_blank" aria-label="TikTok"><img src="img/tiktok_wh.png" alt="TikTok"></a></li>
+      </ol>
+    </div>
+  </footer>
+</body>
+</html>

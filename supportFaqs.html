@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>philosophy</title>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script src="js/jquery.fitvids.js"></script>
+  <script src="js/philosophy.js"></script>
+  <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+  <div id="cartPanel">
+    <h2>
+      cart
+      <button type="button" class="xi-close closeBtn">Close Button</button>
+    </h2>
+    <form action="ordersCart.html">
+      <ul>
+        <li>
+          <img src="img/skincare_cleansers_product01_01.webp" alt="one-step facial cleanser Image">
+          <div>
+            <dl>
+              <dt>one-step facial cleanser</dt>
+              <dd>8oz</dd>
+            </dl>
+            <div class="numberComponent">
+              <input type="button" value="-" class="countDown">
+              <span>1</span>
+              <input type="button" value="+" class="countUp">
+            </div>
+            <button type="button" class="xi-trash trashBtn" data-panel="cartTrashPopup" aria-label="Remove Button"></button>
+            <strong>$34.00</strong>
+          </div>
+        </li>
+      </ul>
+      <div id="cartTrashPopup">
+        <p>Are you sure you want to delete the product?</p>
+        <input type="button" value="yes">
+        <input type="button" class="closeBtn" value="no">
+      </div>
+      <p>
+        Your cart is currently empty.
+      </p>
+      <div>
+        <input type="submit" value="CHECKOUT $34.00 USD">
+        <p>or 4 interest-free payments of $5.50 with <span>Afterpay</span></p>
+      </div>
+    </form>
+    <div>
+      <h3>recommended products</h3>
+      <ul class="cartBoxSlider">
+        <li>
+          <div>
+            <img src="img/skincare_cleansers_product05_01.webp" alt="one-step facial cleanser with tumeric extract">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_skincare_cleansers_product05.html">one-step facial cleanser with tumeric extract</a></dt>
+            <dd>Very oversized &amp; angular, large metal trim, flat lens</dd>
+            <dd>$28</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/bathBody_fragranceBath_product05_01.webp" alt="lavender hydrating shower gel">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_bathBody_fragranceBath_product05.html">lavender hydrating shower gel</a></dt>
+            <dd>amazing grace</dd>
+            <dd>$36</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/fragrance_EDT_product05_01.webp" alt="falling in love eau de toilette">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_fragrance_EDT_product05.html">falling in love eau de toilette</a></dt>
+            <dd>falling in love</dd>
+            <dd>$60</dd>
+          </dl>
+        </li>
+        <li>
+          <div>
+            <img src="img/gift_skincareGift_product01_01.webp" alt="hydrate & glow skincare gift set">
+            <button type="button" class="xi-heart heartBtn">Wish List</button>
+            <input type="button" value="Add to Cart" data-panel="cartPanel">
+          </div>
+          <dl>
+            <dt><a href="detail_gift_skincareGift_product01.html">hydrate &amp; glow skincare gift set</a></dt>
+            <dd>mother's day gift</dd>
+            <dd>$72</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="searchPopup">
+    <h2>
+      <img src="img/philosophylogo.png" alt="philosophy">
+      <button type="button" class="xi-close closeBtn">Close Button</button>
+    </h2>
+    <form>
+      <input type="search" placeholder="Search our store" title="insert your search keyword">
+      <button type="submit" class="xi-search" aria-label="Search Button"></button>
+    </form>
+    <dl>
+      <dt>Popular Suggestions</dt>
+      <dd>fresh cream</dd>
+      <dd>amazing grace</dd>
+      <dd>pure grace</dd>
+      <dd>vanilla</dd>
+      <dd>purity</dd>
+      <dd>skincare</dd>
+      <dd>scent-sational shower gels</dd>
+      <dd>fragrance</dd>
+      <dd>gift sets</dd>
+    </dl>
+  </div>
+
+  <header>
+    <div>
+      <div class="rollingList">
+        <ol>
+          <li>Free ground shipping with $50 order</li>
+          <li>Free 5-piece skincare gift with any $65 purchase. <a href="listbestSellers.html">Shop now</a></li>
+        </ol>
+      </div>
+    </div>
+    <div>
+      <h1>
+        <a href="index_after.html">
+          <img src="img/philosophylogo_wh.png" alt="philosophy">
+        </a>
+      </h1>
+      <button type="button" class="xi-bars" data-panel="hamburgerPanel" aria-label="Nav Hamburger Button"></button>
+      <nav id="hamburgerPanel">
+        <h2>
+          <img src="img/philosophylogo.png" alt="philosophy">
+          <button type="button" class="xi-close closeBtn">Close Button</button>
+        </h2>
+        <ul>
+          <li>
+            <u>Trending now</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Trending now</span></li>
+                  <li><a href="listBestSellers.html">Best Sellers</a></li>
+                  <li><a href="listSummerEssentials.html">Summer Essentials</a></li>
+                  <li><a href="listNewArrivals.html">New Arrivals</a></li>
+                  <li><a href="listLoyaltyProgram.html">Philosophy Loyalty Program</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav1_1.webp" alt="Ultimate miracle worker">
+                    <figcaption>
+                      <strong>Ultimate miracle worker</strong>
+                      smooth fine lines, brighten your complexion, &amp; revitalize your skin with our new breakthrough
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav1_2.webp" alt="6-Piece gift on us">
+                    <figcaption>
+                      <strong>6-Piece gift on us</strong>
+                      enjoy free 6-piece best sellers gift set with any $60 purchase. limited time only!
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Skincare</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Skincare</span></li>
+                  <li><a href="listCleansersToners.html">Face Cleansers &amp; Toners</a></li>
+                  <li><a href="listMoisturizers.html">Face Moisturizer</a></li>
+                  <li><a href="listSerumsTreatments.html">Face Serums &amp; Treatments</a></li>
+                  <li><a href="listMasksPeels.html">Face Masks &amp; Peels</a></li>
+                  <li><a href="listEyeCreamsSerums.html">Eye Creams &amp; Serums</a></li>
+                  <li><a href="listLipCare.html">Lip Care</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav2_1.webp" alt="Miracle worker">
+                    <figcaption>
+                      <strong>Miracle worker</strong>
+                      spf 30 is irritation-free and perfect for the summer sun.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav2_2.webp" alt="More radiant appearance">
+                    <figcaption>
+                      <strong>More radiant appearance</strong>
+                      transform and renew dull skin and fine lines, resulting in a smoother, more radiant appearance.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Bath &amp; Body</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Bath &amp; Body</span></li>
+                  <li><a href="listBathShowerGelss.html">Fragrance Bath &amp; Shower Gels</a></li>
+                  <li><a href="listScentSationalShowerGels.html">Scent-Sational Shower Gels</a></li>
+                  <li><a href="listBodyLotionsCreams.html">Body Lotions &amp; Creams</a></li>
+                  <li><a href="listShampoo.html">Shampoo</a></li>
+                  <li><a href="listHandCreams.html">Hand Creams</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav3_1.webp" alt="Clinically proven to reduce">
+                    <figcaption>
+                      <strong>Clinically proven to reduce</strong>
+                      ditch the crepe, embrace the glow. enjoy glowing, hydrated, &amp; youthful skin.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav3_2.webp" alt="Upgrade your shower routine">
+                    <figcaption>
+                      <strong>Upgrade your shower routine</strong>
+                      shower gels and enjoy ultra creamy lather &amp; lasting hydration.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Fragrance</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Fragrance</span></li>
+                  <li><a href="listEauDeToilettes.html">Eau de Toilettes</a></li>
+                  <li><a href="listEauDeParfums.html">Eau de Parfums</a></li>
+                  <li><a href="listFragranceGifts.html">Fragrance Gifts</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav4_1.webp" alt="Vanilla musk">
+                    <figcaption>
+                      <strong>Vanilla musk</strong>
+                      indulge in our an inspired twist on our classic cream fragrance that adds a hints of vanilla musk.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav4_2.webp" alt="Meet radiant grace perfume">
+                    <figcaption>
+                      <strong>Meet radiant grace perfume</strong>
+                      a warm, empowering blend of jasmine, caramelized sandalwood, &amp; black cherry.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+          <li>
+            <u>Gift Sets</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Gift Sets</span></li>
+                  <li><a href="listGiftsSkincareGifts.html">Skincare Gifts</a></li>
+                  <li><a href="listGiftsBathBodyGifts.html">Bath &amp; Body Gifts</a></li>
+                  <li><a href="listGiftsFragranceGifts.html">Fragrance Gifts</a></li>
+                  <li><a href="listGiftsUnder.html">Gifts Under $50</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav5_1.webp" alt="hope &amp; grace">
+                    <figcaption>
+                      <strong>hope &amp; grace</strong>
+                      travel like a pro with our all in one minis set will transform your skin.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav5_2.webp" alt="6-Piece gift on us">
+                    <figcaption>
+                      <strong>6-Piece gift on us</strong>
+                      enjoy our iconic amazing grace clean and beautifully feminine scent.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>  
+            </div>
+          </li>
+          <li>
+            <u>Discover</u>
+            <div>
+              <div>
+                <ul>
+                  <li><span>Discover</span></li>
+                  <li><a href="listAboutUs.html">About Us</a></li>
+                  <li><a href="listHopeGrace.html">Hope &amp; Grace</a></li>
+                  <li><a href="listOurPurpose.html">Our Purpose</a></li>
+                  <li><a href="listLoyaltyProgram.html">Loyalty Program</a></li>
+                </ul>
+                <div>
+                  <figure>
+                    <img src="img/nav6_1.webp" alt="Your purchases support women's mental health initiatives through hope grace.">
+                    <figcaption>
+                      your purchases help us to support community-based initiatives to improve the mental health of women through our hope &amp; grace initiative.
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="img/nav6_2.webp" alt="Committed to eco-friendly packaging.">
+                    <figcaption>
+                      we are committed to developing responsible packaging that respects the environment and reduces impact on the planet &amp; the people who live here
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </li>
+        </ul>
+        <ol>
+          <li><button type="button" data-panel="searchPopup" aria-label="Search Button">Search</button></li>
+          <li><a href="ordersWishList.html" aria-label="Wish List">Wish List</a></li>
+        </ol>
+      </nav>
+      <ul>
+        <li><button type="button" class="xi-search" data-panel="searchPopup" aria-label="Search Button"></button></li>
+        <li><a href="ordersWishList.html" class="xi-heart" aria-label="Wish List"></a></li>
+        <li><a href="ordersMypage.html">My page</a></li>
+        <li><button type="button" class="xi-market" data-panel="cartPanel" aria-label="Orders Cart"></button></li>
+      </ul>
+    </div>    
+  </header>
+
+  <div class="faqsContainer">
+    <aside>
+      <h2>Faqs</h2>
+      <ul class="accComponent">
+        <li>
+          <h3>Account</h3>
+          <ol>
+            <li><a href="accountProfile.html">Profile</a></li>
+            <li><a href="accountAddressBook.html">Address Book</a></li>
+          </ol>
+        </li>
+        <li>
+          <h3>Orders</h3>
+          <ol>
+            <li><a href="ordersMyOrders.html">My Orders</a></li>
+            <li><a href="ordersWishList.html">Wish List</a></li>
+            <li><a href="ordersCart.html">Cart</a></li>
+          </ol>
+        </li>
+        <li>
+          <h3>Support</h3>
+          <ol>
+            <li><a href="supportfaqs.html">faqs</a></li>
+            <li><a href="supportShippingPolicy.html">Shipping &amp; Returns</a></li>
+            <li><a href="supportAccessibility.html">Accessibility</a></li>
+            <li><a href="supportPrivacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="supportCookiePolicy.html">Cookie Policy</a></li>
+            <li><a href="supportTerms.html">Terms Of Service</a></li>
+          </ol>
+        </li>
+      </ul>
+    </aside>
+    <article>
+      <ol>
+        <li>Support</li>
+        <li>FAQs</li>
+      </ol>
+      <h2>FAQs</h2>
+      <dl>
+        <dt>Browse by topic:</dt>
+        <dd><a href="#faqOrderDetails">Order details</a></dd>
+        <dd><a href="#faqShipping">Shipping</a></dd>
+        <dd><a href="#faqReturns">Returns</a></dd>
+        <dd><a href="#faqPromotions">Promotions</a></dd>
+        <dd><a href="#faqEmail">Email &amp; Account</a></dd>
+        <dd><a href="#faqIngredients">Ingredients</a></dd>
+        <dd><a href="#faqSustainability">Sustainability Commitments</a></dd>
+        <dd><a href="#faqContact">Contact</a></dd>
+        <dd><a href="#faqRetailers">Retailers &amp; Press</a></dd>
+      </dl>
+      <div id="faqOrderDetails">
+        <h3>Order details</h3>
+        <ul>
+          <li>
+            <h4>what if i am having problems placing an order online?</h4>
+            <p>
+              we are happy to help place your order. simply call our consumer care team at 1.800.568.3151, 9:00 a.m.- 5:00 p.m. monday-friday & 9:00 a.m.- 3:00 p.m saturday-sunday, eastern standard time.
+            </p>
+          </li>
+          <li>
+            <h4>how can i track my order?</h4>
+            <p>
+              check your shipping confirmation email and click on the link to track your package, or simply call philosophy consumer care at1.800.568.3151, 9:00 a.m.-5:00 p.m. monday-friday & 9:00 a.m.-3:00 p.m saturday-sunday, eastern standard time, and we will be happy to track your package for you.
+            </p>
+          </li>
+          <li>
+            <h4>when will i receive my order?</h4>
+            <p>
+              it is our goal to process and ship your order as quickly as possible. standard orders are typically processed within 24-48 hours from the time of purchase. orders placed on fridays, saturdays, sundays and holidays will be processed the following business day. please refer to our shipping policy page for more information
+            </p>
+          </li>
+          <li>
+            <h4>how can i change or cancel my order after it has been submitted?</h4>
+            <p>
+              once an order has been submitted online and is in process we are unable to make any changes or cancel the order.
+            </p>
+          </li>
+          <li>
+            <h4>what if i do not receive my email order confirmation?</h4>
+            <p>
+              check your spam folder to ensure our email has not been misdirected. if you are still unable to locate the confirmation, please call our consumer care team at1.800.568.3151, 9:00 a.m.-5:00 p.m. monday- friday & 9:00 a.m.- 3:00 p.m saturday - sunday, eastern standard time, and we will be happy to assist you.
+            </p>
+          </li>
+          <li>
+            <h4>do you offer gift cards?</h4>
+            <p>
+              no, at the moment we do not offer gift cards.
+            </p>
+          </li>
+          <li>
+            <h4>do you offer gift boxes?</h4>
+            <p>
+              yes, you can choose gift options on the shipping information page of checkout. you will have the option to include a gift message on the packing slip at no charge (up to 160 characters), or gift box the order for $4.00.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div id="faqShipping">
+        <h3>Shipping</h3>
+        <ul>
+          <li>
+            <h4>how much does philosophy charge for shipping?</h4>
+            <p>please see our <span>shipping policy.</span></p>
+          </li>
+          <li>
+            <h4>i am currently outside of the u.s. can i place an order to ship within the u.s.?</h4>
+            <p>at this time, philosophy only accepts payments from paypal and credit / debit cards issued from within the united states, in u.s. dollars, with a u.s. billing and shipping address.</p>
+          </li>
+          <li>
+            <h4>do you ship outside of the u.s.?</h4>
+            <p>philosophy does not offer international shipping options outside of the united states.</p>
+          </li>
+          <li>
+            <h4>what should i do if there is a shipping error on my order?</h4>
+            <p>simply call our consumer care team at1.800.568.3151, 9:00 a.m.-5:00 p.m. monday-friday & 9:00 a.m.-3:00 p.m saturday-sunday, eastern standard time, and we will be happy to assist you.</p>
+          </li>
+        </ul>
+      </div>
+      <div id="faqReturns">
+        <h3>Shipping</h3>
+        <ul>
+          <li>
+            <h4>how do i return a product?</h4>
+            <p>while we hope that you are always satisfied with your philosophy purchase, we understand that you may need to return a product. if for any reason you need to return your product, please review our return policy</p>
+          </li>
+          <li>
+            <h4>my product was received damaged—what should i do?</h4>
+            <p>all products that are received damaged must be returned to receive a refund or replacement. if the item in question is part of a kit or bundle, the entire kit must be returned before a refund or replacement can be issued.please see our return policyfor additional details.</p>
+          </li>
+          <li>
+            <h4>how will i receive my refund?</h4>
+            <p>refunds will be issued to the account that you used to purchase the item, even if the account is closed or paid in full. for more information about refunds to your third-party credit cards, contact your card-issuing financial institution.</p>
+          </li>
+          <li>
+            <h4>how long before i receive my refund?</h4>
+            <p>refunds will be credited back to the original payment method within 10 business days after the returns center receives the item. contact your credit card issuer for their policy on posting credits. in general, allow up to 2 billing cycles for your credit to appear on your billing statement.</p>
+          </li>
+        </ul>
+      </div>
+      <div id="faqPromotions">    
+        <h3>Promotions</h3>
+        <ul>
+          <li>
+            <h4>having trouble with a promotion code?</h4>
+            <p>please check the promotional disclaimer found at the bottom of your email offer or on the philosophy.com homepage to be certain you meet the requirements to redeem the offer.</p>
+          </li>
+          <li>
+            <h4>still having trouble with a promotion code?</h4>
+            <p>simply call philosophy consumer care at1.800.568.3151, 9:00 a.m.-5:00 p.m. monday-friday & 9:00 a.m.-3:00 p.m saturday-sunday, eastern standard time, and we will be happy to assist you.</p>
+          </li>
+          <li>
+            <h4>how can i receive promotion codes and special discounts?</h4>
+            <p>when you sign up to become a member at philosophy.com, you can opt in to receive email communications that will alert you to philosophy’s special sales and promotions.</p>
+          </li>
+          <li>
+            <h4>how do i obtain samples of philosophy products?</h4>
+            <p>thank you for your excitement about our products! philosophers rewards members will have the option to choose samples with any order placed online at philosophy.com. if placing your order via phone, our consumer care team will be happy to add samples to your order. you may also use our store locator to find your nearest retail location, where you can sample a wide selection of philosophy products.</p>
+          </li>
+        </ul>
+      </div>
+      <div id="faqEmail">
+        <h3>Email &amp; Account</h3>
+        <ul>
+          <li>
+            <h4>what if i have signed up for your emails and i have not received them?</h4>
+            <p>please be sure to add philosophy@email.philosophy.com to your address book to guarantee that they are not misdirected by your email provider!</p>
+          </li>
+          <li>
+            <h4>how do i unsubscribe from emails?</h4>
+            <p>please click on the unsubscribe link located at the bottom of your email communication. if you are unsuccessful in unsubscribing, please contact our customer service at 1.800.568.3151.</p>
+          </li>
+          <li>
+            <h4>how do i change my login information?</h4>
+            <p>you have the ability to review, change or correct the information on your philosophy.com account by logging into your account online. if you would like to deactivate your philosophy.com account, please contact us at1.800.568.3151.</p>
+          </li>
+          <li>
+            <h4>how do i update my password?</h4>
+            <p>simply click the sign in link at the top of our site, and click the forgot password link on the sign-in page. you should receive an email from philosophy entitled “your password has been reset.” if you do not receive this email in your inbox, please be sure to check your spam or junk folder. you must sign in to your account using your email address and the temporary password exactly as it is displayed in the email. once you are logged in, just choose the link to “view profile” then choose the option to edit your password. the “old password” it will ask for is the temporary password that was emailed to you.</p>
+          </li>
+        </ul>
+      </div>
+      <div id="faqIngredients">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>
+            <h4>where are the product ingredients listed?</h4>
+            <p>product ingredients may be found on each product page on philosophy.com by clicking on the ingredients tab to the right of the product image. ingredient listings are also available on the product or the product packaging if purchased through one of our retail partners.</p>
+          </li>
+          <li>
+            <h4>how do i know if this product is right for me?</h4>
+            <p>you have many options when building the best skin-care routine for your skin. we would love to offer you a personal consultation and detailed recommendations that address your skin type and concerns. we invite you to give us a call at1.800.568.3151 9:00 a.m.-5:00 p.m. monday-friday & 9:00 a.m.-3:00 p.m saturday-sunday, eastern standard time.</p>
+          </li>
+          <li>
+            <h4>do you test on animals?</h4>
+            <p>philosophy is fully committed to using alternatives to animal testing to ensure the safety of our products. please be assured that we do not perform, nor do we ever commission any third parties on our behalf to perform, animal testing on our products or ingredients except when required by law.</p>
+          </li>
+          <li>
+            <h4>does philosophy plan on creating a paraben-free line?</h4>
+            <p>we have been proactively formulating our products without butyl parabens for several years. only a handful of our original products still contain paraben-based preservatives. we are actively seeking non-paraben, effective alternatives for these products.</p>
+          </li>
+          <li>
+            <h4>my skin feels sensitive after using a product; who should i tell?</h4>
+            <p>please allow us to personally assist you. simply call our consumer care team at1.800.568.3151, 9:00 a.m.- 5:00 p.m. monday-friday & 9:00 a.m.-3:00 p.m saturday-sunday, eastern standard time. please do not discard the product that may have caused this sensitivity.</p>
+          </li>
+          <li>
+            <h4>is philosophy body wash sulfate free?</h4>
+            <p>philosophy shampoo, bath and shower gel products do contain sulfates. sulfates help create lather and foam in our products, and attract oil and water to leave your skin and hair feeling soft and clean. the most common sulfate you’ll find in our product ingredient lists is sodium lauryl sulfate, which is safely used in many cosmetic and cleaning products.</p>
+          </li>
+          <li>
+            <h4>what do we mean by clean formulas?</h4>
+            <p>our clean program responds to consumer and retailer desire for ingredient transparency and to choose products based on the absence of certain ingredients while maintaining safety and performance. Our clean list goes beyond authorities' requirements and some of our main competitors. It is dynamic and updated on a regular basis as consumer expectations evolve. we exclude parabens, phenoxyethanol, BHT, phthalates among others in all our product launches starting in 2022 and are working on reformulating our existing products to be in line with our clean standards</p>
+          </li>
+        </ul>
+      </div>
+      <div id="faqSustainability">
+        <h3>Sustainability Commitments</h3>
+        <ul>
+          <li>
+            <h4>What do we mean by clean formulas?</h4>
+            <p>
+              our clean program responds to consumer and retailer desire for ingredient transparency and to choose products based on the absence of certain ingredients, while maintaining safety and performance. our clean list goes beyond authorities' requirements and some of our main competitors. it is dynamic and updated on a regular basis as consumer expectations evolve. we exclude parabens, phenoxyethanol, BHT, phthalates among others* in all our product launches starting in 2022 and are working on reformulating our existing products to be in line with our clean standards.
+              <span>*Acetonitrile, Acetaldehyde , Acrylamide, Acrylates as follows: Ethyl methacrylate; Methyl methacrylate, Aluminum powder, aluminum salts and active aluminum complexes , 1,4-Dioxane (under 10ppm for rinse off; under 3 ppm for leave on), Benzophenone 1, 2, Benzophenone 3 (oxybenzone) , Butoxyethanol, BHA (ButylatedHydroxyAnisole), BHT (ButylatedHydroxyToluene), CarbonBlack, Cyclotetrasiloxane (D4), DEA complexes / derivatives / condensates , Ethanolamines: DEA (Diethanolamine); MEA (Monoethanolamine); TEA (Triethanolamine), at and under NEL of 2.5% is ok, Formaldehyde and Formaldehyde-releasing agents (formaldehyde donors), Hydroquinone, Lead and Lead Acetate, Mercury and Mercury compounds (Thimerisol), Methyl Cellosolve(Ethylene glycol monomethyl ether or 2, Methoxyethanol), Fragrance 1%, Methylchloroisothiazolinone (MCI), Methylisothiazolinone (MIT), Mineral oil (non USP grade), Octinoxate, Oxybenzone, Parabens: Butylparaben; Ethylparaben, Isobutylparaben; Isopropylparaben; Methylparaben; Propylparaben, Paraffin (non USP grade), Petrolatum (non USP grade), Perfluorinated compounds (PFAS, PFOA, PFOS, PTFE), Phenoxyethanol , Phenylenediamine, phenylenediamine salts & phenylenediamine derivatives, Phthalates: dibutylphthalate(DBP); dimethylphthalate(DMP); diethylphthalate(DEP) and diethylhexylphthalate(DEHP), Polyethylene microbeads, polypropylene microbeads & polystyrene microbeads (applies to rinse off products only), Resorcinol, Styrene & styrene oxide, Sulfate surfactants (SLS, SLES) , Talc, Toluene, Triclocarban, Triclosan</span>
+            </p>
+          </li>
+          <li>
+            <h4>What do we mean by eco-responsible formulas?</h4>
+            <p>
+              we favor green chemistry, relying as much as possible on biotechnology*, high quality synthetics and responsibly sourced natural ingredients to minimize our impact on nature.
+
+              *biotechnology produces active ingredients from either bio fermentation or cell culture minimizing impact on nature</p>
+          </li>
+          <li>
+            <h4>What do we mean by responsibly sourced ingredients?</h4>
+            <p>we are actively sourcing products and services in an ethical, sustainable and socially conscious way. we require our supply chain partners to demonstrate their responsible practices through expert third party assessments and audits. for ingredients that face greater sustainability risks, we go further by working with certifiers, sector-wide collaborations and pursuing traceability. business partners must also comply with our code of conduct - which sets out Coty’s minimum standards including human and labour rights, environmental protection, and anti-corruption.</p>
+          </li>
+          <li>
+            <h4>What do we mean by eco-responsible packaging?</h4>
+            <p>
+              we are transitioning to FSC certified, responsibly sourced, recycled paperboard for our folding cartons* and to minimum 30% PCR plastic and 20% PCR glass in the majority of our packaging** saving up to 45 tonnes of virgin paper and 80 tonnes of virgin plastic each year***
+              <span>*this applies to all finished goods cartons for newly produced sellable products as of January 2022. we are evaluating how to extend to samples, gift with purchases and consumer collateral. **subject to available commercial supply ***excludes PP PCR. calculation based of off 2019 production</span>
+            </p>
+          </li>
+          <li>
+            <h4>What do we mean by more responsible manufacturing?</h4>
+            <p>our philosophy Sanford manufacturing site uses 100% renewable electricity and we are aiming to offset 100% of its carbon emissions by end 2023</p>
+          </li>
+        </ul>
+      </div>
+      <div id="faqContact">
+        <h3>Contact</h3>
+        <ul>
+          <li>
+            <h4>how do i contact philosophy?</h4>
+            <p>please contact our consumer care team at +1-800-568-3151, 9:00 a.m.-5:00 p.m. monday-friday & 9:00 a.m.-3:00 p.m saturday-sunday, eastern standard time. we may also be reached via our contact us form. philosophy is closed in observance of major holidays.</p>
+          </li>
+          <li>
+            <h4>i encountered an error on your website, who should i tell?</h4>
+            <p>we are always striving for accuracy and appreciate a friendly eye for detail. please let us know by contacting us at1.800.568.3151, 9:00 a.m.-5:00 p.m. monday-friday & 9:00 a.m.-3:00 p.m saturday-sunday, eastern standard time, or via our contact us form</p>
+          </li>
+          <li>
+            <h4>who do i tell about my great philosophy experience or my favorite products?</h4>
+            <p>
+              thank you for your enthusiasm! we would love to hear your stories.
+              to rate and review a product:
+              <span>
+                1. click on the “write a review” link on the product page
+                2. sign into your philosophy.com account or create a new account
+                3. write your review, and rate the product
+              </span>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div id="faqRetailers">
+        <h3>Retailers &amp; Press</h3>
+        <ul>
+          <li>
+            <h4>who are philosophy’s authorized retailers?</h4>
+            <p>
+              currently, philosophy’s major authorized retailers include: nordstrom, sephora, macy’s, dillards, bon ton, belk, sephora inside jcp, von maur, qvc, ulta, lord & taylor, military, beautybar.com, birchbox.com and select philosophy boutiques.
+              <span>
+                we encourage you to purchase philosophy products only from an authorized retailer to ensure the efficacy of our product. we greatly appreciate your interest in philosophy and invite you to shop online at www.philosophy.com or by phone at 1.800.568.3151. we are happy to assist you 9:00 a.m.-5:00 p.m. monday-friday & 9:00 a.m.-3:00 p.m saturday-sunday, eastern standard time.
+              </span>
+            </p>
+          </li>
+          <li>
+            <h4>who is philosophy’s press contact?</h4>
+            <p>please email press inquiries to philosophypr@cotyinc.com.</p>
+          </li>
+          <li>
+            <h4>does philosophy have a printed catalog?</h4>
+            <p>in an effort to be environmentally friendly, we have chosen to use our website, www.philosophy.com, as our online catalog. the website features available products, key ingredients, email sign up, philosophy retailers, upcoming events and new product details.</p>
+          </li>
+          <li>
+            <h4>how do i request a donation?</h4>
+            <p>we would like to be able to consider individual donation requests, but this is simply not possible. philosophy has a thriving charity division that is deeply woven into the fabric of our company and its mission. philosophy has chosen to establish the hope & grace initiative which focuses on empowering women through mental health and wellbeing. 1% of philosophy product sales support community-based mental health efforts. we invite you to learn more about our charitable efforts, here.</p>
+          </li>
+          <li>
+            <h4>how do i become a philosophy distributor, retailer or wholesaler?</h4>
+            <p>at this time, we are not seeking new distribution partners. we appreciate your inquiry and wish you the utmost success in your endeavors.</p>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </div>
+
+  <footer>
+    <ul>
+      <li>
+        <h2>
+          <img src="img/philosophylogo_wh.png" alt="philosophy">
+        </h2>
+        <strong>why shop with us</strong>
+        <p>our philosophy is that taking small steps every day leads to your best self</p>
+      </li>
+      <li>
+        <h3>Company</h3>
+        <ol>
+          <li><a href="listAboutUs.html">About Us</a></li>
+          <li><a href="listHopeGrace.html">Giving Back</a></li>
+          <li><a href="listOurPurpose.html">Our Purpose</a></li>
+        </ol>
+      </li>
+      <li>
+        <h3>Customer Care</h3>
+        <ol>
+          <li><a href="supportShippingPolicy.html">Shipping Information</a></li>
+          <li><a href="supportReturnPolicy.html">Returns &amp; Exchanges</a></li>
+          <li><a href="listOurPurpose.html">Our Purpose</a></li>
+        </ol>
+      </li>
+      <li>
+        <h3>Account</h3>
+        <ol>
+          <li><a href="ordersMyOrders.html">Order Status</a></li>
+          <li><a href="ordersMypage.html">My Account</a></li>
+          <li><a href="listLoyaltyProgram.html">Loyalty Program</a></li>
+        </ol>
+      </li>
+    </ul>
+    <div>
+      <ol>
+        <li><a href="supportPrivacyPolicy.html">Privacy Policy</a></li>
+        <li><a href="supportTerms.html">Terms</a></li>
+        <li><a href="supportCookiePolicy.html">Cookie Policy</a></li>
+        <li><a href="supportAccessibility.html">Accessibility</a></li>
+      </ol>
+      <ol>
+        <li><a href="https://in.pinterest.com/lovephilosophy" target="_blank" aria-label="Pinterest" class="xi-pinterest-p"></a></li>
+        <li><a href="https://www.instagram.com/lovephilosophy" target="_blank" aria-label="Instagram" class="xi-instagram"></a></li>
+        <li><a href="https://www.facebook.com/philosophyus" target="_blank" aria-label="Facebook" class="xi-facebook"></a></li>
+        <li><a href="https://www.tiktok.com/@philosophy" target="_blank" aria-label="TikTok"><img src="img/tiktok_wh.png" alt="TikTok"></a></li>
+      </ol>
+    </div>
+  </footer>
+</body>
+</html>
