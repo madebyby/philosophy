@@ -11,9 +11,9 @@ $(document).ready(function(){
     currentUrl.includes('listHopeGrace')|| 
     currentUrl.includes('listOurPurpose')|| 
     currentUrl.includes('listLoyaltyProgram')
-) {
-    $('header').addClass('headerWh');
-}
+    ) {
+        $('header').addClass('headerWh');
+    }
 
     cartEmpty();
     permissionCut();
@@ -116,14 +116,15 @@ function onlyNumber() {
 }
 
 function togglePaymentInfo() {
+
     if ($("#pay_radio2").is(":checked")) {
-        $(".checkoutContainer form div fieldset:nth-of-type(2) .addInpo").hide();
+        $(".checkoutContainer form div fieldset:nth-of-type(2) .addInpo").css("display", "none");
     } else {
-        $(".checkoutContainer form div fieldset:nth-of-type(2) .addInpo").show();
+        $(".checkoutContainer form div fieldset:nth-of-type(2) .addInpo").css("display", "block");
     }
 
-    $("input[name='pay_radio']").on("change", togglePaymentInfo);
-    togglePaymentInfo();
+    $("input[name='pay_radio']").off("change").on("change", togglePaymentInfo);
+
 }
 
 
@@ -250,13 +251,16 @@ function helpfulControl(){
 
 function navScroll(){
     $(window).scroll(function(){
-        let firstSectionTop = $('section:first').offset().top;
-        if($(window).scrollTop() >= firstSectionTop){
-            $('header').addClass('headerWh ');
-        }else if($(window).scrollTop() <= firstSectionTop){
-            $('header').removeClass('headerWh ');
+        let firstSection = $('section:first');
+        if (firstSection.length) { 
+            let firstSectionTop = firstSection.offset().top;
+            if ($(window).scrollTop() >= firstSectionTop) {
+                $('header').addClass('headerWh');
+            } else {
+                $('header').removeClass('headerWh');
+            }
         }
-    })
+    });
 }
 
 
@@ -330,6 +334,9 @@ function accordion(headerSelector, displayType = 'block') {
 }
 
 function controlProgress(progressSelector, imgSelector) {
+    const pageName = window.location.pathname.split("/").pop();
+
+    if (!pageName.includes("list")) return;
     
     if ($(progressSelector).length === 0 || $(imgSelector).length === 0) {
         console.warn("controlProgress: Required elements not found. Function not executed.");
